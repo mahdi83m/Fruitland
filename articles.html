@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات | سرزمین میوه</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="articles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="articles-page">
+
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-right"></i>
+        بازگشت به خانه
+    </a>
+
+    <!-- Sticky Article Title -->
+    <div class="sticky-title" id="sticky-title">
+        <div class="sticky-title-content">
+            <span class="sticky-article-title">خواص میوه‌های تازه برای سلامتی</span>
+            <div class="sticky-progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Page Header -->
+    <div class="articles-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="logo.png" alt="سرزمین میوه" class="logo-img">
+                <div class="logo-text">
+                    <h1>مقالات سرزمین میوه</h1>
+                    <p>آخرین مقالات و مطالب مفید درباره میوه‌ها و خواص آنها</p>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <i class="fas fa-newspaper"></i>
+                    <span class="stat-number">18</span>
+                    <span class="stat-label">مقاله</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-leaf"></i>
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">تنوع محصولات</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number">از ۱۳۹۵</span>
+                    <span class="stat-label">با شما</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+        
+        <!-- Mobile Articles Button -->
+        <button class="mobile-articles-btn" id="mobile-articles-btn">
+            <i class="fas fa-book-open"></i>
+            <span>مشاهده همه مقالات</span>
+        </button>
+    </div>
+
+    <!-- Mobile Articles Container Overlay -->
+    <div class="mobile-articles-container-overlay" id="mobile-articles-container-overlay">
+        <div class="mobile-articles-container-content">
+            <div class="mobile-articles-container-header">
+                <h2>مقالات سرزمین میوه</h2>
+                <button class="mobile-articles-container-close" id="mobile-articles-container-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-articles-container-list">
+                <!-- Row 1 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="1">
+                        <div class="mobile-article-content">
+                            <h3>خواص میوه‌های تازه برای سلامتی</h3>
+                            <img src="1.png" alt="خواص میوه‌های تازه" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="2">
+                        <div class="mobile-article-content">
+                            <h3>همه چیز درباره میوه خشک</h3>
+                            <img src="2.png" alt="میوه خشک" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="3">
+                        <div class="mobile-article-content">
+                            <h3>طرز تهیه اسموتی‌های سالم</h3>
+                            <img src="3.png" alt="اسموتی‌های سالم" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="4">
+                        <div class="mobile-article-content">
+                            <h3>بهترین میوه‌های فصل زمستان</h3>
+                            <img src="4.png" alt="میوه‌های فصل زمستان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="5">
+                        <div class="mobile-article-content">
+                            <h3>راهنمای انتخاب میوه‌های تازه</h3>
+                            <img src="5.png" alt="انتخاب میوه‌های تازه" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="6">
+                        <div class="mobile-article-content">
+                            <h3>خواص آبمیوه‌های طبیعی</h3>
+                            <img src="6.png" alt="آبمیوه‌های طبیعی" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="7">
+                        <div class="mobile-article-content">
+                            <h3>رژیم غذایی سالم با میوه‌ها</h3>
+                            <img src="fruit.png" alt="رژیم غذایی سالم" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="8">
+                        <div class="mobile-article-content">
+                            <h3>کشت میوه در خانه</h3>
+                            <img src="fruit.png" alt="کشت میوه در خانه" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="9">
+                        <div class="mobile-article-content">
+                            <h3>ترکیب میوه و عسل</h3>
+                            <img src="fruit.png" alt="ترکیب میوه و عسل" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="10">
+                        <div class="mobile-article-content">
+                            <h3>فریز کردن میوه</h3>
+                            <img src="fruit.png" alt="فریز کردن میوه" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="11">
+                        <div class="mobile-article-content">
+                            <h3>دسرهای میوه‌ای</h3>
+                            <img src="fruit.png" alt="دسرهای میوه‌ای" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="12">
+                        <div class="mobile-article-content">
+                            <h3>نگهداری میوه‌ها در کرمان</h3>
+                            <img src="fruit.png" alt="نگهداری میوه‌ها در کرمان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="13">
+                        <div class="mobile-article-content">
+                            <h3>گنجینه طعم و رنگ کرمان</h3>
+                            <img src="fruit.png" alt="گنجینه طعم و رنگ کرمان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="14">
+                        <div class="mobile-article-content">
+                            <h3>کرمان: تابلوی رنگارنگ فصول</h3>
+                            <img src="fruit.png" alt="کرمان تابلوی رنگارنگ فصول" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="15">
+                        <div class="mobile-article-content">
+                            <h3>باغ‌های پنهان کرمان</h3>
+                            <img src="fruit.png" alt="باغ‌های پنهان کرمان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="mobile-articles-row">
+                    <div class="mobile-article-item" data-article="16">
+                        <div class="mobile-article-content">
+                            <h3>راهنمای انتخاب میوه‌های مناسب کرمان</h3>
+                            <img src="fruit.png" alt="راهنمای انتخاب میوه‌های مناسب کرمان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="17">
+                        <div class="mobile-article-content">
+                            <h3>میوه‌های خوشمزه کرمان</h3>
+                            <img src="fruit.png" alt="میوه‌های خوشمزه کرمان" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                    <div class="mobile-article-item" data-article="18">
+                        <div class="mobile-article-content">
+                            <h3>رازهای نگهداری میوه</h3>
+                            <img src="fruit.png" alt="رازهای نگهداری میوه" class="mobile-article-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Container -->
+    <div class="articles-container">
+
+        <!-- Article 1: خواص میوه‌های تازه -->
+        <div class="article-content active" id="article-1">
+            <div class="article-header">
+                <img src="1.png" alt="خواص میوه‌های تازه">
+                <h2>خواص میوه‌های تازه برای سلامتی</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>میوه‌های تازه یکی از مهم‌ترین منابع تغذیه‌ای برای حفظ سلامتی و تندرستی هستند. این مواد غذایی طبیعی سرشار از ویتامین‌ها، مواد معدنی، فیبر و آنتی‌اکسیدان‌های ضروری برای بدن می‌باشند.</p>
+                
+                <h3>ویتامین‌های موجود در میوه‌ها</h3>
+                <p>میوه‌های مختلف حاوی ویتامین‌های متنوعی هستند که هر کدام نقش مهمی در سلامت بدن ایفا می‌کنند:</p>
+                <ul>
+                    <li><strong>ویتامین C:</strong> موجود در مرکبات، کیوی و توت‌فرنگی که سیستم ایمنی را تقویت می‌کند</li>
+                    <li><strong>ویتامین A:</strong> موجود در هویج، انبه و زردآلو که برای سلامت چشم و پوست ضروری است</li>
+                    <li><strong>ویتامین K:</strong> موجود در کیوی و توت‌ها که برای انعقاد خون مهم است</li>
+                    <li><strong>ویتامین‌های گروه B:</strong> موجود در موز و آووکادو که برای متابولیسم انرژی ضروری هستند</li>
+                </ul>
+                
+                <h3>آنتی‌اکسیدان‌های طبیعی</h3>
+                <p>آنتی‌اکسیدان‌ها ترکیباتی هستند که از سلول‌های بدن در برابر رادیکال‌های آزاد محافظت می‌کنند. میوه‌های رنگی مانند توت‌ها، انگور و انار سرشار از آنتی‌اکسیدان هستند.</p>
+                
+                <h3>فیبر غذایی</h3>
+                <p>فیبر موجود در میوه‌ها به بهبود عملکرد دستگاه گوارش، کنترل قند خون و کاهش کلسترول کمک می‌کند. سیب، گلابی و توت‌ها از منابع غنی فیبر هستند.</p>
+                
+                <h3>نکات مهم در مصرف میوه‌ها</h3>
+                <ul>
+                    <li>میوه‌ها را در فصل مناسب مصرف کنید تا از بیشترین فواید بهره‌مند شوید</li>
+                    <li>تنوع در مصرف میوه‌ها را رعایت کنید</li>
+                    <li>میوه‌ها را قبل از مصرف به خوبی بشویید</li>
+                    <li>از مصرف میوه‌های فاسد یا کپک‌زده خودداری کنید</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 2: میوه خشک -->
+        <div class="article-content" id="article-2">
+            <div class="article-header">
+                <img src="2.png" alt="میوه خشک">
+                <h2>همه چیز درباره میوه خشک: خواص، روش تهیه و مصرف</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>میوه خشک یکی از سالم‌ترین و مغذی‌ترین میان‌وعده‌ها است که می‌تواند جایگزین مناسبی برای تنقلات ناسالم باشد. این محصول با حذف آب از میوه‌های تازه تهیه می‌شود و خواص تغذیه‌ای آن‌ها را حفظ می‌کند.</p>
+                
+                <h3>خواص میوه خشک</h3>
+                <ul>
+                    <li><strong>منبع غنی انرژی:</strong> میوه خشک کالری بالایی دارد و برای ورزشکاران مناسب است</li>
+                    <li><strong>فیبر بالا:</strong> به بهبود عملکرد دستگاه گوارش کمک می‌کند</li>
+                    <li><strong>آنتی‌اکسیدان:</strong> از پیری زودرس و بیماری‌های قلبی پیشگیری می‌کند</li>
+                    <li><strong>مواد معدنی:</strong> سرشار از آهن، کلسیم و پتاسیم است</li>
+                </ul>
+                
+                <h3>انواع میوه خشک</h3>
+                <ul>
+                    <li><strong>کشمش:</strong> منبع غنی آهن و انرژی</li>
+                    <li><strong>آلو خشک:</strong> سرشار از فیبر و ویتامین K</li>
+                    <li><strong>زردآلو خشک:</strong> غنی از بتاکاروتن و آهن</li>
+                    <li><strong>انجیر خشک:</strong> منبع کلسیم و فیبر</li>
+                    <li><strong>خرما:</strong> سرشار از پتاسیم و انرژی طبیعی</li>
+                </ul>
+                
+                <h3>روش تهیه میوه خشک در خانه</h3>
+                <ol>
+                    <li>میوه‌ها را به قطعات کوچک و یکسان تقسیم کنید</li>
+                    <li>آن‌ها را در آفتاب یا دستگاه خشک‌کن قرار دهید</li>
+                    <li>دما را بین ۵۰ تا ۶۰ درجه سانتی‌گراد تنظیم کنید</li>
+                    <li>تا زمانی که میوه‌ها کاملاً خشک شوند صبر کنید</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Article 3: اسموتی‌های سالم -->
+        <div class="article-content" id="article-3">
+            <div class="article-header">
+                <img src="3.png" alt="اسموتی‌های سالم">
+                <h2>طرز تهیه اسموتی‌های سالم و خوشمزه</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>اسموتی‌ها یکی از بهترین راه‌ها برای مصرف میوه‌ها و سبزیجات هستند. این نوشیدنی‌های مغذی سرشار از ویتامین‌ها، مواد معدنی و آنتی‌اکسیدان‌ها می‌باشند.</p>
+                
+                <h3>دستور پخت اسموتی توت‌فرنگی و موز</h3>
+                <p><strong>مواد مورد نیاز:</strong></p>
+                <ul>
+                    <li>۱ فنجان توت‌فرنگی تازه</li>
+                    <li>۱ عدد موز رسیده</li>
+                    <li>۱ فنجان شیر بادام یا شیر معمولی</li>
+                    <li>۱ قاشق غذاخوری عسل (اختیاری)</li>
+                    <li>چند تکه یخ</li>
+                </ul>
+                
+                <h3>طرز تهیه:</h3>
+                <ol>
+                    <li>تمام مواد را در مخلوط‌کن بریزید</li>
+                    <li>تا زمانی که مخلوط یکدست شود هم بزنید</li>
+                    <li>در لیوان ریخته و فوراً میل کنید</li>
+                </ol>
+                
+                <h3>دستور پخت اسموتی سبز</h3>
+                <p><strong>مواد مورد نیاز:</strong></p>
+                <ul>
+                    <li>۲ فنجان اسفناج تازه</li>
+                    <li>۱ عدد سیب سبز</li>
+                    <li>۱ عدد موز</li>
+                    <li>۱ فنجان آب نارگیل</li>
+                    <li>۱ قاشق چای‌خوری زنجبیل تازه</li>
+                </ul>
+                
+                <h3>نکات مهم در تهیه اسموتی</h3>
+                <ul>
+                    <li>از میوه‌های تازه و رسیده استفاده کنید</li>
+                    <li>برای طعم بهتر از میوه‌های منجمد استفاده کنید</li>
+                    <li>اسموتی را بلافاصله پس از تهیه مصرف کنید</li>
+                    <li>برای تنوع از ادویه‌هایی مانند دارچین یا زنجبیل استفاده کنید</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 4: میوه‌های فصل زمستان -->
+        <div class="article-content" id="article-4">
+            <div class="article-header">
+                <img src="4.png" alt="میوه‌های فصل زمستان">
+                <h2>بهترین میوه‌های فصل زمستان و خواص آنها</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>زمستان فصل مناسبی برای مصرف میوه‌های پرخاصیت است که سیستم ایمنی بدن را تقویت کرده و از ابتلا به بیماری‌های فصلی پیشگیری می‌کنند.</p>
+                
+                <h3>پرتقال و نارنگی</h3>
+                <p>مرکبات زمستانی سرشار از ویتامین C هستند که سیستم ایمنی را تقویت می‌کند:</p>
+                <ul>
+                    <li>تقویت سیستم ایمنی بدن</li>
+                    <li>پیشگیری از سرماخوردگی</li>
+                    <li>کمک به جذب آهن</li>
+                    <li>سلامت پوست و مو</li>
+                </ul>
+                
+                <h3>سیب</h3>
+                <p>سیب یکی از محبوب‌ترین میوه‌های زمستانی است:</p>
+                <ul>
+                    <li>منبع غنی فیبر</li>
+                    <li>کمک به سلامت قلب</li>
+                    <li>کنترل قند خون</li>
+                    <li>پیشگیری از سرطان</li>
+                </ul>
+                
+                <h3>انار</h3>
+                <p>انار میوه‌ای سرشار از آنتی‌اکسیدان است:</p>
+                <ul>
+                    <li>تقویت سیستم ایمنی</li>
+                    <li>کاهش فشار خون</li>
+                    <li>پیشگیری از بیماری‌های قلبی</li>
+                    <li>خاصیت ضد التهابی</li>
+                </ul>
+                
+                <h3>کیوی</h3>
+                <p>کیوی منبع غنی ویتامین C و فیبر است:</p>
+                <ul>
+                    <li>تقویت سیستم ایمنی</li>
+                    <li>بهبود هضم غذا</li>
+                    <li>سلامت چشم</li>
+                    <li>کمک به خواب بهتر</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 5: راهنمای انتخاب میوه‌های تازه -->
+        <div class="article-content" id="article-5">
+            <div class="article-header">
+                <img src="5.png" alt="انتخاب میوه‌های تازه">
+                <h2>راهنمای کامل انتخاب میوه‌های تازه و با کیفیت</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>انتخاب میوه‌های تازه و با کیفیت مهارتی است که می‌تواند تأثیر زیادی بر سلامت و طعم غذاهای شما داشته باشد. در این راهنما نکات مهم انتخاب میوه‌های مختلف را بررسی می‌کنیم.</p>
+                
+                <h3>نکات کلی انتخاب میوه</h3>
+                <ul>
+                    <li><strong>رنگ:</strong> میوه‌های رسیده معمولاً رنگ طبیعی و یکدستی دارند</li>
+                    <li><strong>بو:</strong> میوه‌های تازه بوی طبیعی و خوشایندی دارند</li>
+                    <li><strong>سختی:</strong> میوه نباید خیلی سخت یا خیلی نرم باشد</li>
+                    <li><strong>وزن:</strong> میوه‌های سنگین‌تر معمولاً آبدارتر هستند</li>
+                </ul>
+                
+                <h3>انتخاب سیب</h3>
+                <ul>
+                    <li>سطح صاف و بدون لکه داشته باشد</li>
+                    <li>رنگ یکدست و طبیعی باشد</li>
+                    <li>سخت و محکم باشد</li>
+                    <li>ساقه آن سبز و تازه باشد</li>
+                </ul>
+                
+                <h3>انتخاب پرتقال</h3>
+                <ul>
+                    <li>پوست نازک و صاف داشته باشد</li>
+                    <li>وزن نسبت به اندازه آن مناسب باشد</li>
+                    <li>رنگ نارنجی روشن داشته باشد</li>
+                    <li>بدون لکه یا کپک باشد</li>
+                </ul>
+                
+                <h3>انتخاب موز</h3>
+                <ul>
+                    <li>رنگ زرد یکدست داشته باشد</li>
+                    <li>لکه‌های قهوه‌ای کم باشد</li>
+                    <li>ساقه آن سبز باشد</li>
+                    <li>بدون ترک یا شکستگی باشد</li>
+                </ul>
+                
+                <h3>نکات نگهداری</h3>
+                <ul>
+                    <li>میوه‌ها را در جای خنک و خشک نگهداری کنید</li>
+                    <li>از قرار دادن میوه‌های مختلف کنار هم خودداری کنید</li>
+                    <li>میوه‌های آسیب دیده را جدا کنید</li>
+                    <li>قبل از مصرف به خوبی بشویید</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 6: خواص آبمیوه‌های طبیعی -->
+        <div class="article-content" id="article-6">
+            <div class="article-header">
+                <img src="6.png" alt="آبمیوه‌های طبیعی">
+                <h2>خواص آبمیوه‌های طبیعی و بهترین زمان مصرف آنها</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>آبمیوه‌های طبیعی یکی از بهترین راه‌ها برای دریافت ویتامین‌ها و مواد معدنی مورد نیاز بدن هستند. در این مقاله با خواص مختلف آبمیوه‌ها آشنا می‌شویم.</p>
+                
+                <h3>آب پرتقال</h3>
+                <p>آب پرتقال سرشار از ویتامین C است:</p>
+                <ul>
+                    <li>تقویت سیستم ایمنی</li>
+                    <li>جذب بهتر آهن</li>
+                    <li>سلامت پوست</li>
+                    <li>پیشگیری از سرماخوردگی</li>
+                </ul>
+                
+                <h3>آب سیب</h3>
+                <p>آب سیب منبع غنی آنتی‌اکسیدان است:</p>
+                <ul>
+                    <li>کاهش کلسترول</li>
+                    <li>سلامت قلب</li>
+                    <li>پیشگیری از سرطان</li>
+                    <li>بهبود هضم</li>
+                </ul>
+                
+                <h3>آب هویج</h3>
+                <p>آب هویج سرشار از بتاکاروتن است:</p>
+                <ul>
+                    <li>سلامت چشم</li>
+                    <li>تقویت سیستم ایمنی</li>
+                    <li>سلامت پوست</li>
+                    <li>پیشگیری از سرطان</li>
+                </ul>
+                
+                <h3>بهترین زمان مصرف آبمیوه</h3>
+                <ul>
+                    <li><strong>صبح:</strong> آب پرتقال یا آب سیب برای انرژی</li>
+                    <li><strong>قبل از ورزش:</strong> آب هویج یا آب چغندر</li>
+                    <li><strong>بعد از ورزش:</strong> آب نارگیل برای هیدراتاسیون</li>
+                    <li><strong>شب:</strong> آب آلبالو برای خواب بهتر</li>
+                </ul>
+                
+                <h3>نکات مهم در تهیه آبمیوه</h3>
+                <ul>
+                    <li>از میوه‌های تازه و رسیده استفاده کنید</li>
+                    <li>آبمیوه را بلافاصله مصرف کنید</li>
+                    <li>از شکر اضافی استفاده نکنید</li>
+                    <li>برای طعم بهتر از ترکیب میوه‌ها استفاده کنید</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 7: رژیم غذایی سالم -->
+        <div class="article-content" id="article-7">
+            <div class="article-header">
+                <img src="fruit.png" alt="رژیم غذایی سالم">
+                <h2>رژیم غذایی سالم با میوه‌ها: راهنمای کامل تغذیه</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>رژیم غذایی سالم شامل مصرف منظم میوه‌ها می‌تواند تأثیر زیادی بر سلامت کلی بدن داشته باشد. در این مقاله راهنمای کامل تغذیه سالم با میوه‌ها را بررسی می‌کنیم.</p>
+                
+                <h3>مقدار توصیه شده مصرف میوه</h3>
+                <p>سازمان بهداشت جهانی توصیه می‌کند:</p>
+                <ul>
+                    <li>حداقل ۵ واحد میوه و سبزیجات در روز</li>
+                    <li>هر واحد معادل یک فنجان میوه خرد شده</li>
+                    <li>تنوع در مصرف میوه‌های مختلف</li>
+                    <li>ترجیح میوه‌های فصلی</li>
+                </ul>
+                
+                <h3>برنامه غذایی هفتگی</h3>
+                <h4>شنبه تا سه‌شنبه:</h4>
+                <ul>
+                    <li><strong>صبحانه:</strong> اسموتی موز و توت‌فرنگی</li>
+                    <li><strong>میان‌وعده:</strong> سیب یا پرتقال</li>
+                    <li><strong>ناهار:</strong> سالاد میوه</li>
+                    <li><strong>عصرانه:</strong> میوه خشک</li>
+                    <li><strong>شام:</strong> آبمیوه طبیعی</li>
+                </ul>
+                
+                <h3>میوه‌های مناسب برای کاهش وزن</h3>
+                <ul>
+                    <li><strong>گریپ‌فروت:</strong> کالری کم و فیبر بالا</li>
+                    <li><strong>سیب:</strong> احساس سیری طولانی</li>
+                    <li><strong>توت‌ها:</strong> آنتی‌اکسیدان بالا</li>
+                    <li><strong>هندوانه:</strong> آب فراوان و کالری کم</li>
+                </ul>
+                
+                <h3>میوه‌های مناسب برای ورزشکاران</h3>
+                <ul>
+                    <li><strong>موز:</strong> منبع پتاسیم و انرژی</li>
+                    <li><strong>پرتقال:</strong> ویتامین C و هیدراتاسیون</li>
+                    <li><strong>انگور:</strong> آنتی‌اکسیدان و انرژی</li>
+                    <li><strong>آووکادو:</strong> چربی سالم و پروتئین</li>
+                </ul>
+                
+                <h3>نکات مهم در رژیم غذایی</h3>
+                <ul>
+                    <li>مصرف میوه‌ها را در طول روز تقسیم کنید</li>
+                    <li>از میوه‌های فصلی استفاده کنید</li>
+                    <li>ترکیب میوه‌ها با پروتئین</li>
+                    <li>مصرف آب کافی همراه با میوه‌ها</li>
+                    <li>اجتناب از مصرف بیش از حد میوه‌های شیرین</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 8: کشت میوه در خانه -->
+        <div class="article-content" id="article-8">
+            <div class="article-header">
+                <img src="fruit.png" alt="کشت میوه در خانه">
+                <h2>کشت میوه در خانه: راهنمای کامل باغبانی خانگی</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>کشت میوه در خانه نه تنها یک فعالیت سرگرم‌کننده است، بلکه می‌تواند منبع تازه‌ای از میوه‌های ارگانیک برای خانواده شما باشد. در این مقاله راهنمای کامل کشت میوه در فضای محدود خانه را بررسی می‌کنیم.</p>
+                
+                <h3>انتخاب گیاهان مناسب برای خانه</h3>
+                <p>برای کشت موفق در خانه، گیاهانی را انتخاب کنید که:</p>
+                <ul>
+                    <li>نیاز به فضای کم دارند</li>
+                    <li>در گلدان رشد می‌کنند</li>
+                    <li>مقاوم به شرایط داخل خانه هستند</li>
+                    <li>زود به بار می‌نشینند</li>
+                </ul>
+                
+                <h3>بهترین میوه‌ها برای کشت در خانه</h3>
+                <h4>توت‌فرنگی:</h4>
+                <ul>
+                    <li>نیاز به نور مستقیم خورشید</li>
+                    <li>خاک اسیدی و زهکشی خوب</li>
+                    <li>آبیاری منظم و متوسط</li>
+                    <li>کشت در گلدان‌های آویز</li>
+                </ul>
+                
+                <h4>لیموترش:</h4>
+                <ul>
+                    <li>درختچه‌ای مناسب برای بالکن</li>
+                    <li>نیاز به نور فراوان</li>
+                    <li>خاک غنی و زهکشی مناسب</li>
+                    <li>هرس منظم برای شکل‌دهی</li>
+                </ul>
+                
+                <h4>فلفل دلمه‌ای:</h4>
+                <ul>
+                    <li>رشد سریع و آسان</li>
+                    <li>نیاز به نور متوسط</li>
+                    <li>خاک سبک و غنی</li>
+                    <li>آبیاری منظم</li>
+                </ul>
+                
+                <h3>ابزار و لوازم مورد نیاز</h3>
+                <ul>
+                    <li><strong>گلدان:</strong> با سوراخ زهکشی مناسب</li>
+                    <li><strong>خاک:</strong> مخلوط خاک باغچه و کمپوست</li>
+                    <li><strong>کود:</strong> کود آلی یا شیمیایی متعادل</li>
+                    <li><strong>ابزار:</strong> بیلچه، قیچی باغبانی، آبپاش</li>
+                    <li><strong>نور:</strong> لامپ رشد گیاه (در صورت نیاز)</li>
+                </ul>
+                
+                <h3>مراحل کشت</h3>
+                <h4>مرحله ۱: آماده‌سازی</h4>
+                <ul>
+                    <li>انتخاب گلدان مناسب</li>
+                    <li>تهیه خاک با کیفیت</li>
+                    <li>انتخاب بذر یا نهال سالم</li>
+                    <li>آماده‌سازی محل کشت</li>
+                </ul>
+                
+                <h4>مرحله ۲: کشت</h4>
+                <ul>
+                    <li>پر کردن گلدان با خاک</li>
+                    <li>کاشت بذر یا نهال</li>
+                    <li>آبیاری اولیه</li>
+                    <li>قرار دادن در محل مناسب</li>
+                </ul>
+                
+                <h4>مرحله ۳: نگهداری</h4>
+                <ul>
+                    <li>آبیاری منظم</li>
+                    <li>کوددهی ماهانه</li>
+                    <li>هرس و هرس</li>
+                    <li>کنترل آفات</li>
+                </ul>
+                
+                <h3>نکات مهم در باغبانی خانگی</h3>
+                <ul>
+                    <li>دمای مناسب برای رشد گیاهان (۱۸-۲۵ درجه سانتیگراد)</li>
+                    <li>رطوبت کافی هوا</li>
+                    <li>تهویه مناسب</li>
+                    <li>دور نگه داشتن از وسایل گرمایشی</li>
+                    <li>استفاده از سینی زیر گلدان برای جمع‌آوری آب اضافی</li>
+                </ul>
+                
+                <h3>مشکلات رایج و راه‌حل‌ها</h3>
+                <ul>
+                    <li><strong>زرد شدن برگ‌ها:</strong> کمبود نور یا آبیاری نامناسب</li>
+                    <li><strong>پوسیدگی ریشه:</strong> آبیاری بیش از حد</li>
+                    <li><strong>عدم گلدهی:</strong> کمبود کود یا نور</li>
+                    <li><strong>آفات:</strong> استفاده از روش‌های طبیعی کنترل</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 9: ترکیب میوه و عسل -->
+        <div class="article-content" id="article-9">
+            <div class="article-header">
+                <img src="fruit.png" alt="ترکیب میوه و عسل">
+                <h2>ترکیب میوه و عسل: خواص درمانی و دستورات مفید</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>ترکیب میوه و عسل یکی از قدیمی‌ترین و موثرترین روش‌های درمانی در طب سنتی است. این ترکیب طبیعی نه تنها خوشمزه است، بلکه خواص درمانی فراوانی دارد. در این مقاله به بررسی خواص و دستورات مختلف ترکیب میوه و عسل می‌پردازیم.</p>
+                
+                <h3>خواص کلی ترکیب میوه و عسل</h3>
+                <ul>
+                    <li>تقویت سیستم ایمنی بدن</li>
+                    <li>افزایش انرژی و نشاط</li>
+                    <li>بهبود هضم و جذب مواد غذایی</li>
+                    <li>پاکسازی بدن از سموم</li>
+                    <li>کاهش التهاب و درد</li>
+                    <li>بهبود کیفیت خواب</li>
+                </ul>
+                
+                <h3>ترکیبات مفید میوه و عسل</h3>
+                <h4>عسل و لیمو:</h4>
+                <ul>
+                    <li><strong>خواص:</strong> تقویت سیستم ایمنی، پاکسازی کبد</li>
+                    <li><strong>طرز تهیه:</strong> آب یک لیمو + ۱ قاشق عسل + آب گرم</li>
+                    <li><strong>زمان مصرف:</strong> صبح ناشتا</li>
+                    <li><strong>فواید:</strong> درمان سرماخوردگی، کاهش وزن</li>
+                </ul>
+                
+                <h4>عسل و سیب:</h4>
+                <ul>
+                    <li><strong>خواص:</strong> تنظیم قند خون، سلامت قلب</li>
+                    <li><strong>طرز تهیه:</strong> سیب رنده شده + عسل + دارچین</li>
+                    <li><strong>زمان مصرف:</strong> صبحانه یا میان‌وعده</li>
+                    <li><strong>فواید:</strong> کاهش کلسترول، بهبود هضم</li>
+                </ul>
+                
+                <h4>عسل و پرتقال:</h4>
+                <ul>
+                    <li><strong>خواص:</strong> ویتامین C فراوان، آنتی‌اکسیدان</li>
+                    <li><strong>طرز تهیه:</strong> آب پرتقال + عسل + زنجبیل</li>
+                    <li><strong>زمان مصرف:</strong> صبح یا قبل از ورزش</li>
+                    <li><strong>فواید:</strong> تقویت سیستم ایمنی، انرژی‌بخش</li>
+                </ul>
+                
+                <h3>دستورات درمانی</h3>
+                <h4>معجون سرماخوردگی:</h4>
+                <p>ترکیبی از عسل، لیمو، زنجبیل و سیر:</p>
+                <ul>
+                    <li>۲ قاشق عسل طبیعی</li>
+                    <li>آب یک لیمو</li>
+                    <li>۱ قاشق زنجبیل رنده شده</li>
+                    <li>۱ حبه سیر خرد شده</li>
+                    <li>آب گرم</li>
+                </ul>
+                
+                <h4>معجون انرژی:</h4>
+                <p>ترکیبی از عسل، موز و مغزها:</p>
+                <ul>
+                    <li>۱ موز رسیده</li>
+                    <li>۲ قاشق عسل</li>
+                    <li>مغز بادام و گردو</li>
+                    <li>شیر یا آب</li>
+                </ul>
+                
+                <h3>نکات مهم در مصرف</h3>
+                <ul>
+                    <li>استفاده از عسل طبیعی و خام</li>
+                    <li>عدم حرارت دادن عسل بالای ۴۰ درجه</li>
+                    <li>مصرف در حد اعتدال</li>
+                    <li>توجه به حساسیت‌های غذایی</li>
+                    <li>مشورت با پزشک در صورت بیماری خاص</li>
+                </ul>
+                
+                <h3>دستورات دسر و شیرینی</h3>
+                <h4>سالاد میوه با عسل:</h4>
+                <ul>
+                    <li>ترکیب میوه‌های مختلف</li>
+                    <li>عسل به عنوان شیرین‌کننده</li>
+                    <li>اضافه کردن مغزها</li>
+                    <li>سرو سرد</li>
+                </ul>
+                
+                <h4>اسموتی عسل و میوه:</h4>
+                <ul>
+                    <li>ترکیب میوه‌های فصلی</li>
+                    <li>عسل برای شیرینی طبیعی</li>
+                    <li>شیر یا ماست</li>
+                    <li>یخ برای خنکی</li>
+                </ul>
+                
+                <h3>هشدارها و محدودیت‌ها</h3>
+                <ul>
+                    <li>عدم مصرف برای کودکان زیر یک سال</li>
+                    <li>محدودیت مصرف برای دیابتی‌ها</li>
+                    <li>توجه به کیفیت عسل</li>
+                    <li>مصرف در حد اعتدال</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 10: فریز کردن میوه -->
+        <div class="article-content" id="article-10">
+            <div class="article-header">
+                <img src="fruit.png" alt="فریز کردن میوه">
+                <h2>فریز کردن میوه: راهنمای کامل نگهداری طولانی مدت</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>فریز کردن میوه یکی از بهترین روش‌ها برای نگهداری طولانی مدت و حفظ خواص غذایی میوه‌ها است. این روش به شما امکان می‌دهد تا در تمام فصول سال از میوه‌های تازه استفاده کنید. در این مقاله راهنمای کامل فریز کردن انواع میوه‌ها را بررسی می‌کنیم.</p>
+                
+                <h3>اصول کلی فریز کردن میوه</h3>
+                <ul>
+                    <li>انتخاب میوه‌های تازه و رسیده</li>
+                    <li>شستشوی کامل و ضدعفونی</li>
+                    <li>خشک کردن کامل میوه‌ها</li>
+                    <li>بسته‌بندی مناسب</li>
+                    <li>تنظیم دمای فریزر (۱۸- درجه سانتیگراد)</li>
+                </ul>
+                
+                <h3>مراحل آماده‌سازی</h3>
+                <h4>مرحله ۱: انتخاب و شستشو</h4>
+                <ul>
+                    <li>انتخاب میوه‌های سالم و بدون لک</li>
+                    <li>شستشو با آب سرد</li>
+                    <li>استفاده از محلول ضدعفونی (اختیاری)</li>
+                    <li>خشک کردن با حوله تمیز</li>
+                </ul>
+                
+                <h4>مرحله ۲: آماده‌سازی</h4>
+                <ul>
+                    <li>برش میوه‌ها به اندازه مناسب</li>
+                    <li>حذف هسته و پوست (در صورت نیاز)</li>
+                    <li>آماده‌سازی برای بسته‌بندی</li>
+                </ul>
+                
+                <h3>روش‌های مختلف فریز کردن</h3>
+                <h4>فریز کردن ساده:</h4>
+                <ul>
+                    <li>قرار دادن میوه‌ها در کیسه فریزر</li>
+                    <li>خارج کردن هوای اضافی</li>
+                    <li>بستن محکم کیسه</li>
+                    <li>قرار دادن در فریزر</li>
+                </ul>
+                
+                <h4>فریز کردن با شکر:</h4>
+                <ul>
+                    <li>مخلوط کردن میوه با شکر</li>
+                    <li>انتظار برای حل شدن شکر</li>
+                    <li>بسته‌بندی و فریز کردن</li>
+                    <li>مناسب برای میوه‌های ترش</li>
+                </ul>
+                
+                <h4>فریز کردن با شربت:</h4>
+                <ul>
+                    <li>تهیه شربت شکر (۳۰-۵۰٪)</li>
+                    <li>قرار دادن میوه در شربت</li>
+                    <li>بسته‌بندی و فریز کردن</li>
+                    <li>حفظ شکل و طعم بهتر</li>
+                </ul>
+                
+                <h3>فریز کردن انواع میوه‌ها</h3>
+                <h4>توت‌ها (توت‌فرنگی، تمشک، شاه‌توت):</h4>
+                <ul>
+                    <li>شستشوی ملایم</li>
+                    <li>خشک کردن کامل</li>
+                    <li>فریز کردن در یک لایه</li>
+                    <li>انتقال به کیسه پس از یخ زدن</li>
+                </ul>
+                
+                <h4>سیب و گلابی:</h4>
+                <ul>
+                    <li>برش به قطعات کوچک</li>
+                    <li>آب‌پز کردن کوتاه</li>
+                    <li>سرد کردن سریع</li>
+                    <li>فریز کردن</li>
+                </ul>
+                
+                <h4>هلو و زردآلو:</h4>
+                <ul>
+                    <li>حذف هسته</li>
+                    <li>برش به نیمه یا قطعات</li>
+                    <li>استفاده از شربت شکر</li>
+                    <li>فریز کردن</li>
+                </ul>
+                
+                <h4>مرکبات:</h4>
+                <ul>
+                    <li>پوست کندن کامل</li>
+                    <li>حذف پوسته سفید</li>
+                    <li>فریز کردن در شربت</li>
+                    <li>مناسب برای آبمیوه</li>
+                </ul>
+                
+                <h3>نکات مهم در فریز کردن</h3>
+                <ul>
+                    <li>استفاده از ظروف مناسب فریزر</li>
+                    <li>نوشتن تاریخ فریز کردن</li>
+                    <li>عدم پر کردن بیش از حد ظروف</li>
+                    <li>تنظیم دمای فریزر</li>
+                    <li>جلوگیری از باز و بسته کردن مکرر</li>
+                </ul>
+                
+                <h3>مدت زمان نگهداری</h3>
+                <ul>
+                    <li><strong>توت‌ها:</strong> ۸-۱۲ ماه</li>
+                    <li><strong>سیب و گلابی:</strong> ۱۰-۱۲ ماه</li>
+                    <li><strong>هلو و زردآلو:</strong> ۸-۱۰ ماه</li>
+                    <li><strong>مرکبات:</strong> ۶-۸ ماه</li>
+                    <li><strong>موز:</strong> ۶-۸ ماه</li>
+                </ul>
+                
+                <h3>نحوه استفاده از میوه‌های فریز شده</h3>
+                <ul>
+                    <li>یخ‌زدایی در یخچال</li>
+                    <li>استفاده مستقیم در اسموتی</li>
+                    <li>پختن در دسرها</li>
+                    <li>تهیه مربا و کمپوت</li>
+                    <li>استفاده در سالاد میوه</li>
+                </ul>
+                
+                <h3>مشکلات رایج و راه‌حل‌ها</h3>
+                <ul>
+                    <li><strong>سوختگی فریزر:</strong> بسته‌بندی محکم</li>
+                    <li><strong>تغییر رنگ:</strong> استفاده از ویتامین C</li>
+                    <li><strong>کریستال‌های یخ:</strong> خشک کردن کامل</li>
+                    <li><strong>طعم نامطلوب:</strong> استفاده از شربت</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 11: دسرهای میوه‌ای -->
+        <div class="article-content" id="article-11">
+            <div class="article-header">
+                <img src="fruit.png" alt="دسرهای میوه‌ای">
+                <h2>دسرهای میوه‌ای: دستورات خوشمزه و سالم</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>دسرهای میوه‌ای نه تنها خوشمزه هستند، بلکه می‌توانند جایگزین سالمی برای دسرهای پرکالری باشند. در این مقاله دستورات متنوع و خوشمزه دسرهای میوه‌ای را بررسی می‌کنیم که هم سالم هستند و هم طعم فوق‌العاده‌ای دارند.</p>
+                
+                <h3>اصول تهیه دسرهای سالم</h3>
+                <ul>
+                    <li>استفاده از میوه‌های تازه و فصلی</li>
+                    <li>کاهش مصرف شکر</li>
+                    <li>استفاده از شیرین‌کننده‌های طبیعی</li>
+                    <li>ترکیب با مغزها و دانه‌ها</li>
+                    <li>استفاده از لبنیات کم چرب</li>
+                </ul>
+                
+                <h3>دستورات دسرهای ساده</h3>
+                <h4>سالاد میوه با ماست:</h4>
+                <p>ترکیبی ساده و خوشمزه:</p>
+                <ul>
+                    <li>۲ فنجان میوه‌های مختلف</li>
+                    <li>۱ فنجان ماست یونانی</li>
+                    <li>۲ قاشق عسل</li>
+                    <li>مغز بادام خرد شده</li>
+                    <li>نعناع تازه برای تزئین</li>
+                </ul>
+                
+                <h4>پارفه میوه‌ای:</h4>
+                <p>لایه‌ای از میوه و ماست:</p>
+                <ul>
+                    <li>ماست یونانی</li>
+                    <li>میوه‌های خرد شده</li>
+                    <li>گرانولا خانگی</li>
+                    <li>عسل یا شربت افرا</li>
+                    <li>مغزها برای تزئین</li>
+                </ul>
+                
+                <h3>دستورات دسرهای پیشرفته</h3>
+                <h4>کیک میوه‌ای بدون پخت:</h4>
+                <p>کیکی سالم و خوشمزه:</p>
+                <ul>
+                    <li>۲ فنجان مغز بادام</li>
+                    <li>۱ فنجان خرما</li>
+                    <li>۲ قاشق کره بادام</li>
+                    <li>میوه‌های تازه برای تزئین</li>
+                    <li>شکلات تلخ ذوب شده</li>
+                </ul>
+                
+                <h4>آیس‌کرم میوه‌ای:</h4>
+                <p>آیس‌کرمی سالم و طبیعی:</p>
+                <ul>
+                    <li>موزهای فریز شده</li>
+                    <li>توت‌فرنگی تازه</li>
+                    <li>شیر بادام</li>
+                    <li>عسل برای شیرینی</li>
+                    <li>وانیل</li>
+                </ul>
+                
+                <h3>دستورات ویژه</h3>
+                <h4>چیزکیک میوه‌ای:</h4>
+                <p>چیزکیکی سبک و خوشمزه:</p>
+                <ul>
+                    <li>بیسکویت سبوس‌دار</li>
+                    <li>پنیر خامه‌ای کم چرب</li>
+                    <li>ماست یونانی</li>
+                    <li>ژلاتین</li>
+                    <li>میوه‌های تازه</li>
+                </ul>
+                
+                <h4>ترایفل میوه‌ای:</h4>
+                <p>دسری لایه‌ای و زیبا:</p>
+                <ul>
+                    <li>کیک اسفنجی</li>
+                    <li>کرم بادام</li>
+                    <li>میوه‌های مختلف</li>
+                    <li>ژله میوه‌ای</li>
+                    <li>خامه زده شده</li>
+                </ul>
+                
+                <h3>دستورات فصلی</h3>
+                <h4>دسرهای تابستانی:</h4>
+                <ul>
+                    <li>سالاد میوه با نعناع</li>
+                    <li>آیس‌کرم میوه‌ای</li>
+                    <li>اسموتی‌های خنک</li>
+                    <li>پودینگ میوه‌ای</li>
+                </ul>
+                
+                <h4>دسرهای زمستانی:</h4>
+                <ul>
+                    <li>کمپوت میوه‌ای گرم</li>
+                    <li>پای میوه‌ای</li>
+                    <li>کیک میوه‌ای</li>
+                    <li>شیرینی میوه‌ای</li>
+                </ul>
+                
+                <h3>نکات مهم در تهیه دسر</h3>
+                <ul>
+                    <li>استفاده از میوه‌های رسیده و تازه</li>
+                    <li>تنظیم شیرینی طبق ذائقه</li>
+                    <li>تزئین زیبا و جذاب</li>
+                    <li>نگهداری در یخچال</li>
+                    <li>مصرف در همان روز تهیه</li>
+                </ul>
+                
+                <h3>جایگزین‌های سالم</h3>
+                <ul>
+                    <li><strong>شکر:</strong> عسل، شربت افرا، استویا</li>
+                    <li><strong>خامه:</strong> ماست یونانی، پنیر کوتاژ</li>
+                    <li><strong>آرد سفید:</strong> آرد کامل، آرد بادام</li>
+                    <li><strong>کره:</strong> روغن نارگیل، کره بادام</li>
+                </ul>
+                
+                <h3>تزئین و سرو</h3>
+                <ul>
+                    <li>استفاده از میوه‌های رنگی</li>
+                    <li>مغزها و دانه‌ها</li>
+                    <li>شکلات تلخ رنده شده</li>
+                    <li>نعناع و ریحان تازه</li>
+                    <li>پودر دارچین یا کاکائو</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Article 12: نگهداری میوه‌ها در کرمان -->
+        <div class="article-content" id="article-12">
+            <div class="article-header">
+                <img src="fruit.png" alt="نگهداری میوه‌ها در کرمان">
+                <h2>نگهداری میوه‌ها در کرمان: نکات و روش‌ها</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>کرمان، به عنوان یکی از بزرگترین و معروف‌ترین استان‌های ایران، با آب‌وهوای خاص، میوه‌های متنوع و با کیفیتی را در خود جای داده است. میوه‌هایی مانند انار، انگور، زردآلو و خرما که از مهم‌ترین محصولات این استان به حساب می‌آیند. با توجه به اینکه این میوه‌ها، بیشتر در فصل‌های خاصی تولید می‌شوند، نگهداری صحیح آن‌ها بسیار حائز اهمیت است. در این مقاله قصد داریم به بررسی نکات و روش‌های مؤثر برای نگهداری میوه‌ها در کرمان بپردازیم.</p>
+                
+                <h3>۱. انتخاب میوه‌های تازه</h3>
+                <h4>۱.۱. ویژگی‌های میوه تازه</h4>
+                <p>انتخاب میوه تازه از مهم‌ترین مراحل نگهداری آن‌ها است. برای انجام درست این کار، باید به دنبال میوه‌های زیر باشید:</p>
+                <ul>
+                    <li><strong>ظاهر:</strong> میوه‌ها باید سالم و بدون لکه یا آسیب باشند. رنگ میوه باید مطابق با نوع آن باشد و شکل‌های غیرمعمول نشانه خراب شدن میوه است.</li>
+                    <li><strong>بافت:</strong> میوه‌های نرم و له شده باید از خرید خارج شوند. بافت میوه‌ها می‌تواند نشان‌دهنده تازگی آن‌ها باشد.</li>
+                    <li><strong>بو:</strong> میوه‌های تازه معمولاً بوی خوشی دارند. بو می‌تواند نشانه‌ای از نرسیده یا فاسد شدن میوه باشد.</li>
+                </ul>
+                
+                <h4>۱.۲. مشاوره از فروشندگان محلی</h4>
+                <p>اگر در انتخاب میوه‌ها شک دارید، از فروشندگان محلی بخواهید که شما را راهنمایی کنند. متخصصان محلی معمولاً دارای تجربه و دانش کافی در مورد محصولات خود هستند و می‌توانند بهترین گزینه‌ها را به شما معرفی کنند.</p>
+                
+                <h3>۲. شرایط نگهداری میوه‌ها</h3>
+                <p>نگهداری میوه‌ها در شرایط مناسب نه تنها تأثیر قابل توجهی بر حفظ کیفیت و طعم آن‌ها دارد، بلکه می‌تواند مدت زمان نگهداری آن‌ها را نیز افزایش دهد.</p>
+                
+                <h4>۲.۱. دما</h4>
+                <p>دما یکی از مهم‌ترین عوامل تأثیرگذار بر نگهداری میوه‌ها است. به طور کلی، دماهای زیر برای نگهداری میوه‌ها توصیه می‌شود:</p>
+                <ul>
+                    <li><strong>میوه‌های سردسیری:</strong> میوه‌هایی مانند سیب، گلابی و پرتقال باید در دمای خنک (بین ۰ تا ۴ درجه سانتی‌گراد) نگهداری شوند.</li>
+                    <li><strong>میوه‌های گرمسیری:</strong> میوه‌هایی مانند موز، انبه و آناناس باید در دمای اتاق نگهداری شوند و ترجیحاً در معرض نور مستقیم آفتاب قرار نگیرند.</li>
+                </ul>
+                
+                <h4>۲.۲. رطوبت</h4>
+                <p>رطوبت نیز یکی از عوامل کلیدی برای نگهداری میوه‌ها است. سطح رطوبت هوا باید به گونه‌ای باشد که میوه‌ها خشک نشوند و در عین حال از رشد باکتری‌ها و قارچ‌ها جلوگیری شود. برای این منظور:</p>
+                <ul>
+                    <li>از کیسه‌های نوعی مخصوص میوه استفاده کنید که قابلیت تنفس داشته باشند.</li>
+                    <li>می‌توانید از دستمال‌های کاغذی در بسته‌بندی میوه‌ها استفاده کنید تا رطوبت اضافی را جذب کنند.</li>
+                </ul>
+                
+                <h4>۲.۳. نور</h4>
+                <p>نگهداری میوه‌ها در نور مستقیم آفتاب می‌تواند منجر به خراب شدن سریع‌تر آن‌ها شود. به همین دلیل بهتر است میوه‌ها را در مکان‌های تاریک و خنک نگهداری کنید.</p>
+                
+                <h3>۳. استفاده از یخچال</h3>
+                <h4>۳.۱. قواعد یخچالی</h4>
+                <p>یخچال یکی از بهترین مکان‌ها برای نگهداری میوه‌ها به شمار می‌رود، اما برای جلوگیری از آسیب دیدن آن‌ها باید چند نکته را مد نظر داشته باشید:</p>
+                <ul>
+                    <li>میوه‌های حساس به سرما مانند موز، خرما و انبه نباید در یخچال قرار گیرند.</li>
+                    <li>میوه‌هایی مانند توت فرنگی، گیلاس و سیب در یخچال و در ظروف مناسب نگهداری شوند.</li>
+                </ul>
+                
+                <h4>۳.۲. انتخاب ظروف مناسب</h4>
+                <p>استفاده از ظروف شیشه‌ای یا پلاستیکی با تهویه مناسب برای نگهداری میوه‌ها در یخچال توصیه می‌شود. قرار دادن میوه‌ها در کیسه‌های پلاستیکی فشرده می‌تواند به تغییر طعم و فساد آن‌ها منجر شود.</p>
+                
+                <h3>۴. دسته‌بندی میوه‌ها</h3>
+                <p>دسته‌بندی صحیح میوه‌ها یک روش کارآمد برای افزایش عمر مفید آن‌ها است:</p>
+                <ul>
+                    <li>میوه‌های رسیده و نارس را جدا نگه دارید.</li>
+                    <li>میوه‌های گازدار (مانند سیب و موز) را از میوه‌های غیرگازدار (مانند توت و زردآلو) جدا نگهداری کنید تا از تسریع فرآیند رسیدن جلوگیری کنید.</li>
+                </ul>
+                
+                <h3>۵. بسته‌بندی مناسب</h3>
+                <p>بسته‌بندی صحیح میوه‌ها ناگزیر است. استفاده از بسته‌بندی‌های مناسب می‌تواند به حفظ تازگی و جلوگیری از آسیب دیدن آن‌ها کمک کند:</p>
+                <ul>
+                    <li>انتخاب کیسه‌های کاغذی یا سبدهای دارای تهویه به جای پلاستیک‌های فشرده.</li>
+                    <li>استفاده از لایه‌های نازک پارچه‌ای برای محافظت از میوه‌ها.</li>
+                </ul>
+                
+                <h3>۶. مدت زمان نگهداری</h3>
+                <p>هر نوع میوه زمان خاصی برای نگهداری دارد. دانستن زمان مناسب مصرف برای هر نوع میوه می‌تواند در جلوگیری از هدررفت آن‌ها مؤثر باشد:</p>
+                <ul>
+                    <li><strong>میوه‌های با مدت نگهداری طولانی:</strong> مانند سیب و انار، می‌توانند برای چند ماه نگهداری شوند.</li>
+                    <li><strong>میوه‌های حساس به فساد:</strong> مانند توت فرنگی و گیلاس باید در کوتاه‌ترین زمان ممکن مصرف شوند.</li>
+                </ul>
+                
+                <h3>۷. فواید نگهداری مناسب میوه‌ها</h3>
+                <p>نگهداری صحیح میوه‌ها فقط به حفظ کیفیت آن‌ها محدود نمی‌شود، بلکه فواید دیگری نیز دارد:</p>
+                <ul>
+                    <li><strong>کاهش هدررفت مواد غذایی:</strong> با روش‌های صحیح نگهداری می‌توان از هدررفت میوه‌ها جلوگیری کرد.</li>
+                    <li><strong>افزایش سلامت خانوار:</strong> مصرف میوه‌های تازه و سالم به عنوان منبع ویتامین‌ها و مواد معدنی موجب افزایش سلامتی خانواده می‌شود.</li>
+                    <li><strong>کاهش هزینه‌ها:</strong> با جلوگیری از فاسد شدن میوه‌ها، می‌توانید از هزینه‌های اضافی خرید میوه‌های جدید جلوگیری کنید.</li>
+                </ul>
+                
+                <h3>۸. مصرف به موقع و ایده‌های کاربردی</h3>
+                <p>پس از خرید و نگهداری میوه‌ها، مصرف به موقع آن‌ها اهمیت دارد. چند ایده برای مصرف میوه‌ها عبارتند از:</p>
+                <ul>
+                    <li><strong>تهیه اسموتی:</strong> مخلوط کردن میوه‌ها با ماست یا شیر به عنوان یک صبحانه مغذی.</li>
+                    <li><strong>تهیه دسرها:</strong> استفاده از میوه‌ها برای تهیه دسرها مانند کیک یا پای میوه.</li>
+                    <li><strong>سالاد میوه:</strong> ترکیب میوه‌های مختلف برای تهیه یک سالاد سالم و خوشمزه.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>نگهداری صحیح میوه‌ها در کرمان می‌تواند به حفظ کیفیت، طراوت و طعم آن‌ها کمک کند. رعایت شرایط مناسب نگهداری، استفاده از یخچال، بسته‌بندی صحیح، و اطلاع از زمان نگهداری، از مهم‌ترین نکات برای مراقبت از میوه‌ها هستند. با پیگیری این نکات، می‌توانید از بهترین و خوشمزه‌ترین میوه‌ها بهره‌مند شوید.</p>
+            </div>
+        </div>
+
+        <!-- Article 13: گنجینه طعم و رنگ کرمان -->
+        <div class="article-content" id="article-13">
+            <div class="article-header">
+                <img src="fruit.png" alt="گنجینه طعم و رنگ کرمان">
+                <h2>گنجینه طعم و رنگ: با میوه‌های خاص کرمان بیشتر آشنا شوید!</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>کرمان، نگین کویر ایران، با آب و هوای خاص و خاک حاصلخیز خود، نه تنها جاذبه‌های تاریخی و طبیعی فراوانی دارد، بلکه بهشتی برای پرورش میوه‌هایی است که شاید در کمتر نقطه‌ای از ایران بتوان مشابه آن‌ها را یافت. این میوه‌ها، با طعم و عطر بی‌نظیر و خواص فراوان، سوغاتی ارزشمند از دیار کریمان هستند. در این مقاله، قصد داریم شما را با تعدادی از این میوه‌های خاص و خوشمزه آشنا کنیم. پس با ما همراه باشید!</p>
+                
+                <h3>۱. پسته کرمان: سلطان آجیل ایران</h3>
+                <p>بدون شک، پسته، نام کرمان را در سراسر جهان پرآوازه کرده است. پسته‌های کرمانی، به دلیل کیفیت بالا، طعم لذیذ و مغز پر، به عنوان مرغوب‌ترین پسته دنیا شناخته می‌شوند. این آجیل ارزشمند، سرشار از مواد مغذی، آنتی‌اکسیدان‌ها و چربی‌های سالم است و فواید بسیاری برای سلامتی دارد.</p>
+                <p><strong>نکته جالب:</strong> پسته کرمان انواع مختلفی دارد، از جمله اکبری، احمد آقایی، کله قوچی و فندقی، که هر کدام طعم و شکل ظاهری خاص خود را دارند.</p>
+                
+                <h3>۲. خرمای کلوته: شیرینی دلپذیر کویر</h3>
+                <p>خرما، یکی از مهم‌ترین محصولات کشاورزی کرمان است و خرمای کلوته، از جمله محبوب‌ترین و مرغوب‌ترین انواع آن به شمار می‌رود. این خرما، با بافت نرم و طعم شیرین و دلچسب خود، انرژی‌بخش و مقوی است و به عنوان یک میان‌وعده سالم و خوشمزه، طرفداران زیادی دارد.</p>
+                <p><strong>نکته جالب:</strong> خرمای کلوته به دلیل داشتن رطوبت بالا، نیاز به نگهداری در شرایط خاص دارد و معمولاً به صورت فشرده و بسته‌بندی شده عرضه می‌شود.</p>
+                
+                <h3>۳. گردوی بافت: مغذی و پرخاصیت</h3>
+                <p>بافت، یکی از شهرستان‌های خوش آب و هوای کرمان است که به دلیل شرایط اقلیمی مناسب، محل پرورش گردوهای باکیفیت و مرغوب است. گردوهای بافت، با مغز سفید و چرب و طعم لذیذ خود، سرشار از امگا 3، آنتی‌اکسیدان‌ها و مواد معدنی هستند و به عنوان یک منبع غذایی ارزشمند، نقش مهمی در حفظ سلامتی ایفا می‌کنند.</p>
+                <p><strong>نکته جالب:</strong> گردوی بافت به دلیل داشتن پوست نازک و مغز پر، به راحتی قابل شکستن است و از طعم بسیار خوبی برخوردار است.</p>
+                
+                <h3>۴. انار بردسیر: یاقوت سرخ کویر</h3>
+                <p>انار، یکی از میوه‌های محبوب و پرخاصیت فصل پاییز است و انار بردسیر کرمان، به دلیل طعم ملس و دانه‌های آبدار و خوش‌رنگ خود، شهرت فراوانی دارد. این میوه، سرشار از ویتامین‌ها، آنتی‌اکسیدان‌ها و مواد معدنی است و به عنوان یک منبع غنی از آنتی‌اکسیدان‌ها، در پیشگیری از بسیاری از بیماری‌ها نقش دارد.</p>
+                <p><strong>نکته جالب:</strong> انار بردسیر به دلیل داشتن پوست نازک و دانه‌های درشت، به راحتی قابل مصرف است و از طعم بسیار خوبی برخوردار است.</p>
+                
+                <h3>۵. زردآلوی ارگ بم: طعم آفتاب</h3>
+                <p>ارگ بم، یکی از شهرهای تاریخی کرمان است که به دلیل داشتن آب و هوای گرم و خشک، محل پرورش زردآلوهای خوش‌طعم و باکیفیت است. زردآلوهای ارگ بم، با رنگ زرد روشن و طعم شیرین و ملس خود، سرشار از ویتامین‌ها، مواد معدنی و فیبر هستند و به عنوان یک میوه سالم و مغذی، طرفداران زیادی دارند.</p>
+                <p><strong>نکته جالب:</strong> زردآلوهای ارگ بم به دلیل داشتن بافت نرم و آبدار، به راحتی قابل مصرف هستند و از طعم بسیار خوبی برخوردارند.</p>
+                
+                <h3>۶. انگور رفسنجان: حبه‌های شیرین</h3>
+                <p>رفسنجان، یکی از شهرهای مهم تولیدکننده انگور در ایران است و انگورهای این منطقه، به دلیل طعم شیرین و آبدار و تنوع بالا، شهرت فراوانی دارند. انگورهای رفسنجان، سرشار از ویتامین‌ها، مواد معدنی و آنتی‌اکسیدان‌ها هستند و به عنوان یک میوه سالم و انرژی‌بخش، نقش مهمی در حفظ سلامتی ایفا می‌کنند.</p>
+                <p><strong>نکته جالب:</strong> انگورهای رفسنجان انواع مختلفی دارند، از جمله عسکری، یاقوتی، ریش بابا و سلطانی، که هر کدام طعم و شکل ظاهری خاص خود را دارند.</p>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>کرمان، با داشتن آب و هوای متنوع و خاک حاصلخیز، محل پرورش میوه‌های خاص و خوشمزه‌ای است که هر کدام، طعم و عطر بی‌نظیری دارند و خواص فراوانی برای سلامتی دارند. اگر به دنبال تجربه‌ی طعم‌های جدید و متفاوت هستید، حتماً سری به کرمان بزنید و از این گنجینه طعم و رنگ لذت ببرید.</p>
+                
+                <h3>دعوت به اقدام</h3>
+                <p>شما می‌توانید این میوه‌های خاص و باکیفیت کرمانی را از سرزمین میوه تهیه کنید و از طعم بی‌نظیر آن‌ها لذت ببرید. منتظر حضور گرم شما در سرزمین میوه هستیم!</p>
+            </div>
+        </div>
+
+        <!-- Article 14: کرمان تابلوی رنگارنگ فصول -->
+        <div class="article-content" id="article-14">
+            <div class="article-header">
+                <img src="fruit.png" alt="کرمان تابلوی رنگارنگ فصول">
+                <h2>کرمان: تابلوی رنگارنگ فصول و میوه‌های بهشتی</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>استان کرمان، پهناورترین استان ایران، با اقلیم متنوع و آب و هوای گوناگون، به استان چهار فصل شهرت دارد. این تنوع آب و هوایی، باعث شده تا کرمان در هر فصل، میزبان میوه‌های خاص و خوشمزه‌ای باشد که طعم و عطر بی‌نظیرشان، هر ذائقه‌ای را مجذوب خود می‌کند. از خنکای بهاری تا گرمای تابستانی، از رنگ‌های پاییزی تا سکوت زمستانی، کرمان در هر فصل، با میوه‌های منحصر به فردش، تجربه‌ای متفاوت و لذت‌بخش را به ارمغان می‌آورد. در این مقاله، قصد داریم شما را به سفری در فصول کرمان ببریم و با میوه‌های هر فصل آشنا کنیم. پس همراه ما باشید!</p>
+                
+                <h3>بهار: فصل شکوفه‌ها و نوبرانه‌ها</h3>
+                <p>با آغاز فصل بهار، کرمان جانی دوباره می‌گیرد و درختان، غرق در شکوفه می‌شوند. در این فصل، نوبرانه‌های بهاری از راه می‌رسند و طعم تازگی را به کام می‌نشانند.</p>
+                
+                <h4>زردآلو و گوجه سبز</h4>
+                <p>این دو میوه ترش و شیرین، از اولین میوه‌های بهاری هستند که در کرمان به عمل می‌آیند. طعم ملس و آبدار آن‌ها، حس طراوت و شادابی را به ارمغان می‌آورد.</p>
+                
+                <h4>توت فرنگی</h4>
+                <p>توت فرنگی‌های کرمانی، به دلیل طعم شیرین و عطر دلپذیر خود، طرفداران زیادی دارند. این میوه خوشمزه، سرشار از ویتامین C و آنتی‌اکسیدان‌ها است و برای سلامتی بسیار مفید است.</p>
+                
+                <h4>چغاله بادام</h4>
+                <p>چغاله بادام، میوه نارس درخت بادام، یکی دیگر از نوبرانه‌های بهاری کرمان است. طعم ترش و ترد آن، تجربه‌ای متفاوت و لذت‌بخش را رقم می‌زند.</p>
+                
+                <h3>تابستان: فصل گرما و میوه‌های رنگارنگ</h3>
+                <p>تابستان در کرمان، فصلی گرم و پربار است. در این فصل، باغ‌ها پر از میوه‌های رنگارنگ و آبدار می‌شوند و طعم شیرین زندگی را به کام می‌نشانند.</p>
+                
+                <h4>پسته</h4>
+                <p>پسته، نگین کرمان، در فصل تابستان به اوج می‌رسد. پسته‌های کرمانی، با کیفیت بالا و طعم لذیذ خود، در سراسر جهان شناخته شده‌اند.</p>
+                
+                <h4>هلو و شلیل</h4>
+                <p>این دو میوه خوشمزه، با طعم شیرین و بافت نرم خود، در فصل تابستان طرفداران زیادی دارند. هلو و شلیل، سرشار از ویتامین‌ها و مواد معدنی هستند و برای سلامتی بسیار مفیدند.</p>
+                
+                <h4>انگور</h4>
+                <p>انگورهای کرمانی، با تنوع بالا و طعم شیرین و آبدار خود، در فصل تابستان به وفور یافت می‌شوند. انگور، منبع غنی از آنتی‌اکسیدان‌ها است و برای پیشگیری از بسیاری از بیماری‌ها مفید است.</p>
+                
+                <h3>پاییز: فصل رنگ‌ها و طعم‌های خاص</h3>
+                <p>پاییز در کرمان، فصلی زیبا و دل‌انگیز است. در این فصل، برگ درختان به رنگ‌های زرد و نارنجی در می‌آیند و باغ‌ها، پر از میوه‌های خاص و خوشمزه می‌شوند.</p>
+                
+                <h4>انار</h4>
+                <p>انار، میوه پاییزی کرمان، با طعم ملس و دانه‌های آبدار و خوش‌رنگ خود، شهرت فراوانی دارد. انار، سرشار از آنتی‌اکسیدان‌ها است و برای سلامتی بسیار مفید است.</p>
+                
+                <h4>خرمالو</h4>
+                <p>خرمالو، میوه پاییزی دیگری است که در کرمان به عمل می‌آید. خرمالو، با طعم شیرین و بافت نرم خود، منبع غنی از ویتامین A و فیبر است.</p>
+                
+                <h4>به</h4>
+                <p>به، میوه پاییزی خوش‌عطری است که در کرمان یافت می‌شود. به، سرشار از ویتامین C و فیبر است و برای سلامتی بسیار مفید است.</p>
+                
+                <h3>زمستان: فصل سکوت و طعم‌های ماندگار</h3>
+                <p>زمستان در کرمان، فصلی سرد و آرام است. در این فصل، درختان به خواب زمستانی فرو می‌روند و باغ‌ها، در سکوتی عمیق فرو می‌روند. اما این سکوت، به معنای پایان طعم‌ها نیست.</p>
+                
+                <h4>مرکبات</h4>
+                <p>در فصل زمستان، مرکباتی مانند پرتقال، نارنگی و لیمو، از باغ‌های کرمان برداشت می‌شوند و طعم تازگی و شادابی را به سفره‌ها می‌آورند.</p>
+                
+                <h4>خشکبار</h4>
+                <p>در فصل زمستان، خشکباری مانند پسته، گردو، بادام و کشمش، از محصولات کرمانی، به عنوان تنقلات سالم و مقوی، مورد استفاده قرار می‌گیرند.</p>
+                
+                <h4>خرما</h4>
+                <p>خرما، در تمام طول سال در کرمان یافت می‌شود، اما در فصل زمستان، به عنوان یک منبع انرژی‌بخش و گرم، بیشتر مورد توجه قرار می‌گیرد.</p>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>کرمان، با داشتن چهار فصل متمایز و آب و هوای گوناگون، در هر فصل، با میوه‌های خاص و خوشمزه‌اش، تجربه‌ای متفاوت و لذت‌بخش را به ارمغان می‌آورد. سفر به کرمان در هر فصلی از سال، فرصتی است برای چشیدن طعم‌های جدید و متفاوت و لذت بردن از زیبایی‌های طبیعت.</p>
+            </div>
+        </div>
+
+        <!-- Article 15: باغ‌های پنهان کرمان -->
+        <div class="article-content" id="article-15">
+            <div class="article-header">
+                <img src="fruit.png" alt="باغ‌های پنهان کرمان">
+                <h2>باغ‌های پنهان: سفری به دنیای میوه‌های خاص و بومی استان کرمان</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>استان کرمان، گستره‌ای پهناور با تنوع اقلیمی بی‌نظیر، نه تنها در تاریخ و فرهنگ غنی خود حرف‌های بسیاری برای گفتن دارد، بلکه در حوزه کشاورزی و باغداری نیز، گنجینه‌ای ارزشمند محسوب می‌شود. در این سرزمین چهار فصل، میوه‌هایی پرورش می‌یابند که شاید نام و نشان آن‌ها را کمتر شنیده باشید؛ میوه‌هایی که ریشه در خاک این دیار دارند و با طعم و خواص بی‌نظیر خود، بخشی از هویت و فرهنگ غذایی مردم کرمان را شکل می‌دهند. در این مقاله، قصد داریم به اعماق باغ‌های کرمان سفر کنیم و شما را با تعدادی از این میوه‌های خاص و بومی آشنا سازیم. با ما همراه باشید تا طعم اصالت را بچشید!</p>
+                
+                <h3>بخش اول: پسته، نگین سبز کرمان</h3>
+                <p>بی‌شک، پسته، شناخته‌شده‌ترین و ارزشمندترین محصول کشاورزی کرمان است. این دانه روغنی خوشمزه، نه تنها در ایران، بلکه در سراسر جهان، به عنوان یک آجیل لوکس و پرطرفدار شناخته می‌شود. اما پسته کرمان، فراتر از یک محصول تجاری، نمادی از هویت و تلاش مردم این دیار است.</p>
+                
+                <h4>انواع پسته کرمانی</h4>
+                <p>پسته کرمان، با تنوع ارقام خود، طیف گسترده‌ای از طعم‌ها و شکل‌ها را ارائه می‌دهد. از جمله مهم‌ترین ارقام پسته کرمانی می‌توان به پسته اکبری (با اندازه بزرگ و طعم کره‌ای)، پسته احمدآقایی (با شکل کشیده و طعم شیرین)، پسته کله قوچی (با شکل گرد و طعم آجیلی) و پسته فندقی (با اندازه کوچک و طعم ملایم) اشاره کرد.</p>
+                
+                <h4>خواص پسته</h4>
+                <p>پسته، سرشار از مواد مغذی، آنتی‌اکسیدان‌ها و چربی‌های سالم است. این آجیل ارزشمند، منبع خوبی از پروتئین، فیبر، ویتامین‌ها (به ویژه ویتامین B6) و مواد معدنی (به ویژه مس، منگنز و فسفر) است. مصرف پسته، به کاهش کلسترول خون، بهبود عملکرد قلب و عروق، تقویت سیستم ایمنی بدن و پیشگیری از برخی بیماری‌ها کمک می‌کند.</p>
+                
+                <h4>نقش پسته در اقتصاد کرمان</h4>
+                <p>پسته، نقش بسیار مهمی در اقتصاد کرمان ایفا می‌کند. این محصول، علاوه بر ایجاد اشتغال برای هزاران نفر، به عنوان یک منبع درآمد ارزی قابل توجه برای کشور محسوب می‌شود.</p>
+                
+                <h3>بخش دوم: خرما، شیرینی کویر</h3>
+                <p>خرما، یکی دیگر از محصولات مهم کشاورزی کرمان است که در مناطق گرمسیری این استان به وفور یافت می‌شود. خرما، با طعم شیرین و خواص بی‌نظیر خود، از دیرباز به عنوان یک غذای اصلی و مقوی در کرمان مورد استفاده قرار می‌گرفته است. نخلستان‌های سرسبز خرما که در مناطق جنوبی استان کرمان و در دل کویر گسترده شده‌اند، منظره‌ای زیبا و چشم‌نواز را خلق کرده‌اند و نشان از حیات و سرزندگی در این اقلیم گرمسیری دارند.</p>
+                
+                <h4>انواع خرما کرمانی</h4>
+                <p>خرما کرمان، با تنوع ارقام خود، پاسخگوی هر سلیقه‌ای است. از جمله مهم‌ترین ارقام خرما کرمانی می‌توان به خرمای کلوته (با بافت نرم و طعم شیرین و دلچسب)، خرمای مضافتی (با بافت لطیف و طعم شکلاتی)، خرمای ربی (با طعم کاراملی و بافت نیمه‌خشک) و خرمای زاهدی (با طعم ملایم و بافت خشک) اشاره کرد.</p>
+                
+                <h4>خواص خرما</h4>
+                <p>خرما، منبع غنی از انرژی، فیبر، ویتامین‌ها (به ویژه ویتامین‌های گروه B) و مواد معدنی (به ویژه پتاسیم، منیزیم و آهن) است. مصرف خرما، به تنظیم قند خون، بهبود عملکرد دستگاه گوارش، تقویت استخوان‌ها و پیشگیری از کم‌خونی کمک می‌کند.</p>
+                
+                <h4>نقش خرما در فرهنگ کرمان</h4>
+                <p>خرما، جایگاه ویژه‌ای در فرهنگ و سنت‌های مردم کرمان دارد. این میوه، در مراسم‌های مذهبی، جشن‌ها و دورهمی‌ها، به عنوان یک نماد از برکت و فراوانی، مورد استفاده قرار می‌گیرد.</p>
+                
+                <h3>بخش سوم: گردو، مغز متفکر کوهستان</h3>
+                <p>گردو، یکی دیگر از محصولات با ارزش کرمان است که در مناطق کوهستانی این استان به عمل می‌آید. گردوهای کرمانی، به دلیل کیفیت بالا، طعم لذیذ و مغز پر، از شهرت خاصی برخوردارند.</p>
+                
+                <h4>انواع گردو کرمانی</h4>
+                <p>گردو کرمان، با تنوع ارقام خود، انتخاب‌های متعددی را پیش روی مصرف‌کنندگان قرار می‌دهد. از جمله مهم‌ترین ارقام گردو کرمانی می‌توان به گردوی پوست کاغذی (با پوست نازک و مغز پر)، گردوی تویسرکانی (با طعم کره‌ای و بافت نرم) و گردوی محلی (با طعم خاص و بافت ترد) اشاره کرد.</p>
+                
+                <h4>خواص گردو</h4>
+                <p>گردو، سرشار از چربی‌های سالم (به ویژه امگا 3)، پروتئین، فیبر، ویتامین‌ها (به ویژه ویتامین E) و مواد معدنی (به ویژه منیزیم، فسفر و روی) است. مصرف گردو، به بهبود عملکرد مغز، کاهش خطر بیماری‌های قلبی و عروقی، تقویت سیستم ایمنی بدن و پیشگیری از برخی سرطان‌ها کمک می‌کند.</p>
+                
+                <h4>نقش گردو در تغذیه کرمان</h4>
+                <p>گردو، از دیرباز به عنوان یک منبع غذایی مهم در کرمان مورد استفاده قرار می‌گرفته است. این مغز مغذی، به عنوان یک میان‌وعده سالم و مقوی، در سبد غذایی خانواده‌های کرمانی جایگاه ویژه‌ای دارد.</p>
+                
+                <h3>بخش چهارم: انار، یاقوت سرخ پاییزی</h3>
+                <p>انار، میوه پاییزی محبوب و پرخاصیت کرمان، با طعم ملس و دانه‌های آبدار و خوش‌رنگ خود، زینت‌بخش سفره‌های کرمانی‌ها در فصل پاییز است.</p>
+                
+                <h4>انواع انار کرمانی</h4>
+                <p>انار کرمان، با تنوع ارقام خود، طیف گسترده‌ای از طعم‌ها و رنگ‌ها را ارائه می‌دهد. از جمله مهم‌ترین ارقام انار کرمانی می‌توان به انار ملس (با طعم ترش و شیرین)، انار شیرین (با طعم شیرین و مطبوع) و انار ترش (با طعم ترش و گزنده) اشاره کرد.</p>
+                
+                <h4>خواص انار</h4>
+                <p>انار، سرشار از آنتی‌اکسیدان‌ها (به ویژه پونیکالاژین)، ویتامین‌ها (به ویژه ویتامین C) و مواد معدنی (به ویژه پتاسیم) است. مصرف انار، به کاهش فشار خون، بهبود عملکرد قلب و عروق، تقویت سیستم ایمنی بدن و پیشگیری از برخی سرطان‌ها کمک می‌کند.</p>
+                
+                <h4>نقش انار در سنت‌های کرمان</h4>
+                <p>انار، در سنت‌های کرمانی‌ها، نمادی از برکت و فراوانی است. این میوه، در شب یلدا، به عنوان یک عنصر اصلی سفره، مورد استفاده قرار می‌گیرد.</p>
+                
+                <h3>بخش پنجم: سایر میوه‌های خاص و بومی کرمان</h3>
+                <p>علاوه بر میوه‌های ذکر شده، کرمان، میزبان میوه‌های خاص و بومی دیگری نیز هست که هر کدام، طعم و خواص منحصر به فرد خود را دارند.</p>
+                
+                <h4>زردآلوی ارگ بم</h4>
+                <p>زردآلوهای ارگ بم، با رنگ زرد روشن، طعم شیرین و بافت نرم خود، شهرت زیادی دارند.</p>
+                
+                <h4>انگور رفسنجان</h4>
+                <p>انگورهای رفسنجان، با تنوع ارقام خود، در فصل تابستان به وفور یافت می‌شوند.</p>
+                
+                <h4>به کرمانی</h4>
+                <p>به‌های کرمانی، با عطر دلپذیر و طعم خاص خود، در فصل پاییز مورد استفاده قرار می‌گیرند.</p>
+                
+                <h4>عناب</h4>
+                <p>عناب، میوه کوچک و قرمز رنگی است که در مناطق کوهستانی کرمان به عمل می‌آید. عناب، خواص دارویی فراوانی دارد و برای درمان برخی بیماری‌ها مورد استفاده قرار می‌گیرد.</p>
+                
+                <h4>انجیر</h4>
+                <p>انجیر دره دهویه سیرجان، با کیفیت عالی در کل ایران معروف است.</p>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>استان کرمان، با تنوع اقلیمی و خاک حاصلخیز خود، گنجینه‌ای ارزشمند از میوه‌های خاص و بومی است. این میوه‌ها، نه تنها طعم و عطر بی‌نظیری دارند، بلکه سرشار از مواد مغذی و خواص دارویی هستند. شناخت و حمایت از این محصولات، به حفظ تنوع زیستی، توسعه کشاورزی پایدار و ارتقای سطح سلامتی جامعه کمک می‌کند.</p>
+                
+                <h3>دعوت به اقدام</h3>
+                <p>به عنوان یک گردشگر یا یک دوستدار طبیعت، از شما دعوت می‌کنیم تا به کرمان سفر کنید و از نزدیک، با این میوه‌های خاص و بومی آشنا شوید. با خرید و مصرف این محصولات، از کشاورزان محلی حمایت کنید و به حفظ این گنجینه ارزشمند کمک کنید.</p>
+            </div>
+        </div>
+
+        <!-- Article 16: راهنمای انتخاب میوه‌های مناسب کرمان -->
+        <div class="article-content" id="article-16">
+            <div class="article-header">
+                <img src="fruit.png" alt="راهنمای انتخاب میوه‌های مناسب کرمان">
+                <h2>راهنمای انتخاب میوه‌های مناسب برای آب و هوای کرمان</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>استان کرمان، با تنوع اقلیمی بی‌نظیر خود، فرصت‌های فراوانی را برای کشاورزی و باغداری فراهم کرده است. این تنوع اقلیمی که از نواحی گرم و خشک تا مناطق کوهستانی سردسیر را در بر می‌گیرد، امکان کشت طیف وسیعی از محصولات کشاورزی را فراهم می‌آورد. با این حال، انتخاب میوه‌های مناسب برای هر منطقه، نقش کلیدی در موفقیت باغداران و تولید محصولات با کیفیت دارد. عدم توجه به سازگاری گونه‌های میوه با شرایط اقلیمی خاص هر منطقه، می‌تواند منجر به کاهش عملکرد، بروز بیماری‌ها و در نهایت شکست پروژه باغداری شود. در این مقاله، به بررسی جامع شرایط آب و هوایی استان کرمان و معرفی میوه‌های سازگار با هر منطقه خواهیم پرداخت.</p>
+                
+                <h3>بخش اول: بررسی شرایط آب و هوایی کرمان</h3>
+                <p>استان کرمان به دلیل وسعت زیاد و قرار گرفتن در جنوب شرقی فلات مرکزی ایران، دارای تنوع اقلیمی قابل توجهی است. این تنوع اقلیمی، خود باعث تقسیم‌بندی استان به مناطق مختلف با شرایط آب و هوایی منحصر به فرد می‌شود که هر کدام نیازمند رویکردی متفاوت در انتخاب گونه‌های میوه است.</p>
+                
+                <h4>تنوع اقلیمی</h4>
+                <p>کرمان، دارای آب و هوای متنوعی است که می‌توان آن را به دسته‌های کلی زیر تقسیم کرد:</p>
+                <ul>
+                    <li><strong>اقلیم گرم و خشک:</strong> بخش‌های وسیعی از استان، به ویژه دشت‌های مرکزی و جنوبی، تحت تاثیر اقلیم گرم و خشک قرار دارند. این مناطق مشخصاً تابستان‌های بسیار گرم و زمستان‌های نسبتاً معتدل و غالباً بدون یخبندان یا با یخبندان‌های خفیف را تجربه می‌کنند. رطوبت نسبی هوا نیز در این مناطق پایین است.</li>
+                    <li><strong>اقلیم معتدل کوهستانی:</strong> نواحی مرتفع و کوهستانی استان، مانند ارتفاعات شهرستان‌های کرمان، سیرجان، بافت، رابر و راور، اقلیم معتدل کوهستانی را دارند. این مناطق تابستان‌های خنک‌تر و زمستان‌های سردتر با بارش برف قابل توجهی را تجربه می‌کنند. طول دوره بدون یخبندان در این مناطق کوتاه‌تر است.</li>
+                    <li><strong>اقلیم نیمه‌خشک و سرد:</strong> برخی مناطق نیز ممکن است دارای ویژگی‌های بینابینی باشند و یا به سمت اقلیم نیمه‌خشک و سرد متمایل شوند، به خصوص در نواحی کوهستانی شمالی‌تر استان.</li>
+                    <li><strong>اقلیم گرمسیری (محدود):</strong> بخش‌های بسیار محدودی از جنوب استان، به خصوص مناطق هم‌مرز با استان هرمزگان، ممکن است تحت تاثیر اقلیم گرمسیری با زمستان‌های بسیار ملایم قرار گیرند، هرچند این مناطق بخش کوچکی از کل استان را تشکیل می‌دهند.</li>
+                </ul>
+                
+                <h4>دما</h4>
+                <p>دما در کرمان، بسته به منطقه و فصل، بسیار متغیر است.</p>
+                <ul>
+                    <li><strong>حداکثر دما:</strong> در تابستان، به ویژه در مناطق گرم و خشک مرکزی و جنوبی استان مانند شهداد، فهرج، ریگان و بم، دما می‌تواند به بالای 45 درجه سانتیگراد برسد و حتی در برخی سال‌ها از 50 درجه سانتیگراد نیز فراتر رود.</li>
+                    <li><strong>حداقل دما و یخبندان:</strong> در زمستان، در مناطق کوهستانی و مرتفع استان، دما به زیر صفر می‌رسد و یخبندان‌های شبانه، به خصوص در ساعات اولیه صبح، مشاهده می‌شود.</li>
+                </ul>
+                
+                <h4>بارندگی</h4>
+                <p>میزان بارندگی در کرمان، به طور کلی کم است و این یکی از محدودیت‌های اساسی در کشاورزی و باغداری محسوب می‌شود.</p>
+                <ul>
+                    <li><strong>توزیع فصلی:</strong> بیشتر بارندگی‌ها در فصل زمستان رخ می‌دهد (معمولاً از اواخر پاییز تا اوایل بهار). تابستان‌ها عموماً خشک و با بارش ناچیز همراه هستند.</li>
+                    <li><strong>مقدار متوسط:</strong> میانگین سالانه بارندگی در استان کرمان بسته به منطقه متغیر است، اما به طور کلی در بسیاری از نقاط استان کمتر از 200 میلی‌متر است.</li>
+                </ul>
+                
+                <h4>منابع آب</h4>
+                <p>کمبود منابع آب، یکی از چالش‌های اصلی و اساسی در بخش کشاورزی و باغداری استان کرمان است.</p>
+                <ul>
+                    <li><strong>کمبود آب‌های سطحی:</strong> رودخانه‌های استان فصلی بوده و جریان دائمی ندارند، که باعث می‌شود اتکا به منابع آب سطحی برای باغات بسیار محدود باشد.</li>
+                    <li><strong>افت منابع آب زیرزمینی:</strong> اتکا اصلی به منابع آب زیرزمینی، به ویژه از طریق قنوات و چاه‌ها، سبب افت شدید سطح آب‌های زیرزمینی در بسیاری از مناطق استان شده است.</li>
+                </ul>
+                
+                <h3>بخش دوم: معیارهای انتخاب میوه‌ها</h3>
+                <p>انتخاب صحیح میوه برای باغ‌های استان کرمان نیازمند در نظر گرفتن مجموعه‌ای از معیارها است که فراتر از صرف علاقه به یک گونه میوه است.</p>
+                
+                <h4>سازگاری با دما (گرمای تابستان و سرمای زمستان)</h4>
+                <ul>
+                    <li><strong>تحمل گرما:</strong> میوه‌هایی که برای مناطق گرم و خشک مرکزی و جنوبی انتخاب می‌شوند، باید توانایی تحمل دمای بالای 45 درجه سانتیگراد و تابش شدید نور خورشید را داشته باشند.</li>
+                    <li><strong>نیاز به سرما:</strong> برای مناطق کوهستانی و سردسیر که نیاز به ساعات سرمای زمستانی دارند، میوه‌هایی مانند سیب، گلابی، گیلاس، آلبالو، هلو، شلیل، زردآلو و بادام بسیار مناسب هستند.</li>
+                    <li><strong>مقاومت به یخبندان:</strong> یخبندان‌های بهاره می‌توانند شکوفه‌ها و میوه‌های جوان را از بین ببرند.</li>
+                </ul>
+                
+                <h4>سازگاری با منابع آب و نیاز آبی</h4>
+                <ul>
+                    <li><strong>میوه‌های کم‌آب‌بر:</strong> با توجه به محدودیت منابع آب، اولویت باید با میوه‌هایی باشد که نیاز آبی کمتری دارند.</li>
+                    <li><strong>مدیریت آبیاری:</strong> حتی برای میوه‌هایی که نیاز آبی بیشتری دارند، استفاده از روش‌های آبیاری نوین مانند آبیاری قطره‌ای، آبیاری زیرسطحی، استفاده از مالچ می‌تواند مصرف آب را به حداقل برساند.</li>
+                </ul>
+                
+                <h4>مقاومت به شوری خاک و آب</h4>
+                <p>در برخی مناطق استان کرمان، خاک و یا آب کشاورزی دارای درجه شوری بالایی است. میوه‌هایی مانند پسته، خرما، انار، انجیر و برخی گونه‌های انگور، تحمل نسبی خوبی نسبت به شوری از خود نشان می‌دهند.</p>
+                
+                <h4>خاک‌ورزی و نوع خاک</h4>
+                <p>اکثر میوه‌ها به خاکی با زهکشی خوب نیاز دارند. خاک‌های شنی و لومی شنی که در بسیاری از مناطق استان وجود دارند، اگرچه نیاز به مواد آلی بیشتری دارند، اما برای رشد ریشه میوه‌هایی مانند پسته و انگور مناسب هستند.</p>
+                
+                <h4>بازارپسندی و اقتصادی بودن</h4>
+                <p>علاوه بر سازگاری‌های فنی، بررسی بازار هدف و میزان تقاضا برای میوه انتخابی، از اهمیت بالایی برخوردار است. میوه‌هایی که در استان کرمان به وفور کشت می‌شوند و از نظر اقتصادی نیز مورد توجه هستند، مانند پسته، خرما، گردو، انار، سیب و انگور، معمولاً بازار فروش مشخصی دارند.</p>
+                
+                <h4>مقاومت به آفات و بیماری‌ها</h4>
+                <p>انتخاب گونه‌ها و ارقامی که مقاومت نسبی به آفات و بیماری‌های رایج در منطقه دارند، می‌تواند هزینه‌های مبارزه و مدیریت را کاهش دهد.</p>
+                
+                <h3>بخش سوم: معرفی میوه‌های سازگار بر اساس مناطق اقلیمی</h3>
+                <p>با در نظر گرفتن تنوع اقلیمی استان کرمان، می‌توان میوه‌های مناسب را برای مناطق مختلف به شرح زیر دسته‌بندی کرد:</p>
+                
+                <h4>الف) مناطق گرم و خشک (دشت‌های مرکزی و جنوبی استان)</h4>
+                <p>این مناطق با تابستان‌های بسیار گرم، دمای بالا و کمبود آب مشخص می‌شوند. میوه‌هایی که در این مناطق موفق هستند، باید تحمل بالایی به گرما، نور شدید خورشید و شرایط کمبود آب داشته باشند.</p>
+                
+                <h5>خرما</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> یکی از استراتژیک‌ترین محصولات استان کرمان است و به گرما و خشکی مقاوم است.</li>
+                    <li><strong>نیازها:</strong> نیاز آبی نسبتاً بالایی دارد اما با سیستم‌های آبیاری نوین و مدیریت صحیح قابل تامین است.</li>
+                    <li><strong>ملاحظات:</strong> نیاز به محافظت در برابر بادهای شدید و آفاتی مانند زنجره خرما.</li>
+                </ul>
+                
+                <h5>پسته</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> از نظر اقتصادی بسیار مهم و مقاوم به شرایط کم‌آبی و شوری خاک است.</li>
+                    <li><strong>نیازها:</strong> نیاز به سرمای زمستانی برای شکستن خواب بذر و جوانه‌ها دارد.</li>
+                    <li><strong>ملاحظات:</strong> نیاز به گرده‌افشانی (کاشت رقم نر در کنار ماده).</li>
+                </ul>
+                
+                <h5>انار</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> نسبتاً مقاوم به گرما و خشکی است و در بسیاری از مناطق استان کرمان کشت می‌شود.</li>
+                    <li><strong>نیازها:</strong> نیاز به آفتاب کامل و خاک با زهکشی خوب دارد.</li>
+                    <li><strong>ملاحظات:</strong> ارقام متنوعی با طعم‌ها و رنگ‌های مختلف وجود دارد.</li>
+                </ul>
+                
+                <h4>ب) مناطق معتدل کوهستانی (ارتفاعات کرمان، سیرجان، بافت، رابر، راور)</h4>
+                <p>این مناطق دارای تابستان‌های خنک‌تر و زمستان‌های سردتر با احتمال یخبندان هستند. این شرایط برای کشت میوه‌هایی که نیاز به سرما دارند، بسیار ایده‌آل است.</p>
+                
+                <h5>سیب</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> از پرمصرف‌ترین و اقتصادی‌ترین میوه‌ها است که نیاز به سرما دارد.</li>
+                    <li><strong>نیازها:</strong> نیاز به سرما در زمستان (میزان نیاز بسته به رقم متفاوت است).</li>
+                    <li><strong>ملاحظات:</strong> تنوع ارقامی بسیار بالا و نیاز به مدیریت دقیق آفات و بیماری‌ها.</li>
+                </ul>
+                
+                <h5>گلابی</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> شبیه به سیب، نیاز به سرما دارد و در مناطق کوهستانی استان قابل کشت است.</li>
+                    <li><strong>نیازها:</strong> نیاز به سرما در زمستان (بیشتر از سیب).</li>
+                    <li><strong>ملاحظات:</strong> ارقام معروف مانند ویلیام، بارتلت، و اسپادان.</li>
+                </ul>
+                
+                <h5>هلو و شلیل</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> از میوه‌های هسته‌دار محبوب که نیاز به سرما دارند.</li>
+                    <li><strong>نیازها:</strong> نیاز به سرما در زمستان (کمتر از سیب و گلابی).</li>
+                    <li><strong>ملاحظات:</strong> حساسیت نسبی به یخبندان‌های شدید.</li>
+                </ul>
+                
+                <h5>گردو</h5>
+                <ul>
+                    <li><strong>چرا مناسب است:</strong> از مهم‌ترین میوه‌های با ارزش اقتصادی در مناطق کوهستانی.</li>
+                    <li><strong>نیازها:</strong> نیاز به سرمای زمستانی و خاک عمیق، حاصلخیز و با زهکشی خوب.</li>
+                    <li><strong>ملاحظات:</strong> نیاز به گرده‌افشانی (کاشت ارقام مناسب).</li>
+                </ul>
+                
+                <h3>بخش چهارم: راهکارهای مدیریت پایدار در باغات کرمان</h3>
+                <p>با توجه به چالش‌های اقلیمی و منابع آبی در استان کرمان، اتخاذ راهکارهای مدیریتی پایدار، کلید موفقیت بلندمدت است:</p>
+                
+                <h4>مدیریت بهینه منابع آب</h4>
+                <ul>
+                    <li>آبیاری قطره‌ای و زیرسطحی: کاهش تبخیر و انتقال مستقیم آب به منطقه ریشه.</li>
+                    <li>زمان‌بندی دقیق آبیاری: بر اساس نیاز گیاه و شرایط آب و هوایی.</li>
+                    <li>استفاده از مالچ: کاهش تبخیر سطحی خاک و حفظ رطوبت.</li>
+                    <li>کاشت ارقام کم‌آب‌بر و مقاوم به خشکی.</li>
+                </ul>
+                
+                <h4>اصلاح و آماده‌سازی خاک</h4>
+                <ul>
+                    <li>افزودن کودهای آلی: بهبود ساختمان خاک، افزایش ظرفیت نگهداری آب و مواد غذایی.</li>
+                    <li>زهکشی مناسب: جلوگیری از غرقابی شدن ریشه و تسهیل هوادهی.</li>
+                    <li>تست خاک: شناسایی نیازهای تغذیه‌ای و شوری.</li>
+                </ul>
+                
+                <h4>مدیریت آفات و بیماری‌ها</h4>
+                <ul>
+                    <li>مدیریت تلفیقی آفات (IPM): استفاده ترکیبی از روش‌های بیولوژیکی، زراعی و شیمیایی.</li>
+                    <li>استفاده از ارقام مقاوم.</li>
+                    <li>رعایت بهداشت باغ: حذف شاخه‌های آلوده و میوه‌های ریخته شده.</li>
+                    <li>پایش مستمر آفات و بیماری‌ها.</li>
+                </ul>
+                
+                <h4>تنوع‌بخشی به محصولات</h4>
+                <p>کشت مخلوط میوه‌ها یا محصولات دیگر در کنار باغات اصلی می‌تواند ریسک اقتصادی را کاهش دهد.</p>
+                
+                <h4>استفاده از دانش فنی و ترویج</h4>
+                <ul>
+                    <li>به‌روزرسانی دانش فنی باغداران از طریق کارگاه‌ها، نشریات و مشاوره‌های تخصصی.</li>
+                    <li>استفاده از ارقام اصلاح شده و پیوندی.</li>
+                    <li>آموزش روش‌های هرس صحیح، تغذیه گیاهی و مدیریت میوه.</li>
+                </ul>
+                
+                <h4>استفاده از فناوری‌های نوین</h4>
+                <ul>
+                    <li>کشاورزی دقیق، استفاده از سنسورهای رطوبت خاک و هواشناسی.</li>
+                    <li>پهپادها برای پایش و سم‌پاشی.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>استان کرمان با داشتن اقلیم‌های متنوع، پتانسیل بالایی برای توسعه باغبانی دارد. با این حال، شناخت دقیق شرایط آب و هوایی هر منطقه و انتخاب میوه‌های سازگار با آن شرایط، از نظر دما، نیاز آبی، نوع خاک و مقاومت به تنش‌های محیطی، امری حیاتی است. با اتخاذ رویکردهای مدیریتی پایدار، بهره‌گیری از فناوری‌های نوین و دانش روز، باغداران کرمانی می‌توانند به سمت تولید محصولات با کیفیت و پایدار حرکت کرده و نه تنها از منابع خدادادی به بهترین نحو استفاده کنند، بلکه سودآوری و بهره‌وری باغات خود را نیز به طور چشمگیری افزایش دهند.</p>
+            </div>
+        </div>
+
+        <!-- Article 17: میوه‌های خوشمزه کرمان -->
+        <div class="article-content" id="article-17">
+            <div class="article-header">
+                <img src="fruit.png" alt="میوه‌های خوشمزه کرمان">
+                <h2>میوه‌های خوشمزه کرمان: سفری به دنیای طعم‌ها و خواص</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>کرمان، نگین کویر ایران، نه تنها به خاطر جاذبه‌های تاریخی و فرهنگی‌اش شناخته می‌شود، بلکه به دلیل تنوع و کیفیت میوه‌هایش نیز شهرت فراوانی دارد. آب و هوای گرم و خشک این منطقه، با روزهای آفتابی طولانی و شب‌های خنک، شرایط ایده‌آلی را برای رشد میوه‌هایی خاص و خوش‌طعم فراهم کرده است. این شرایط اقلیمی منحصربه‌فرد، در کنار خاک حاصلخیز و تکنیک‌های سنتی و مدرن کشاورزی، موجب شده تا کرمان به یکی از قطب‌های اصلی تولید میوه در ایران تبدیل شود.</p>
+                
+                <h3>پسته: طلای سبز کرمان</h3>
+                <p>پسته، بدون شک، معروف‌ترین و ارزشمندترین محصول کشاورزی کرمان است. این دانه روغنی خوشمزه، با طعم منحصربه‌فرد و عطر دل‌انگیز خود، نه تنها در ایران، بلکه در سراسر جهان طرفداران بی‌شماری دارد و به عنوان یکی از گران‌بهاترین خشکبار شناخته می‌شود.</p>
+                
+                <h4>انواع پسته کرمان</h4>
+                <ul>
+                    <li><strong>پسته کله قوچی:</strong> این رقم به دلیل شکل ظاهری کشیده و شبیه به سر قوچ، به این نام مشهور شده است. پسته کله قوچی دارای مغزی درشت و چربی بالا است و طعم شیرین و مطلوبی دارد.</li>
+                    <li><strong>پسته اکبری:</strong> پسته اکبری که به آن پسته بادامی کشیده نیز گفته می‌شود، بلندترین نوع پسته در بین ارقام ایرانی است. این پسته ظاهری کشیده و بادامی شکل دارد و مغز آن نیز کشیده‌تر و خوش‌طعم‌تر از سایر ارقام است.</li>
+                    <li><strong>پسته احمد آقایی:</strong> این رقم که به نام یکی از باغداران پیشکسوت این حوزه نامگذاری شده، یکی از ارقام پرطرفدار و اقتصادی پسته در کرمان است.</li>
+                    <li><strong>پسته فندقی:</strong> همانطور که از نامش پیداست، این رقم پسته شکلی گرد و شبیه به فندق دارد. پسته فندقی از نظر اندازه کوچکتر از ارقام دیگر است اما طعم بسیار خوبی دارد.</li>
+                </ul>
+                
+                <h4>خواص پسته</h4>
+                <ul>
+                    <li><strong>منبع غنی پروتئین:</strong> پسته حاوی پروتئین گیاهی با کیفیت بالا است که برای ساخت و ترمیم بافت‌های بدن ضروری است.</li>
+                    <li><strong>فیبر بالا:</strong> فیبر موجود در پسته به سلامت دستگاه گوارش کمک کرده، احساس سیری را طولانی‌تر می‌کند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> پسته سرشار از ویتامین‌های گروه B، ویتامین E، منیزیم، فسفر، پتاسیم، آهن و روی است.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> پسته حاوی آنتی‌اکسیدان‌هایی مانند لوتئین و زآگزانتین است که برای سلامت چشم‌ها مفید هستند.</li>
+                    <li><strong>چربی‌های سالم:</strong> بیشتر چربی‌های موجود در پسته از نوع چربی‌های غیراشباع هستند که برای سلامت قلب و عروق مفیدند.</li>
+                </ul>
+                
+                <h3>خرما: شیرینی کویر</h3>
+                <p>خرما، یکی دیگر از محصولات استراتژیک و بسیار محبوب استان کرمان است که به دلیل طعم فوق‌العاده شیرین، ارزش غذایی بالا و خواص بی‌شمارش، جایگاه ویژه‌ای در سبد غذایی مردم منطقه و همچنین مصرف‌کنندگان در سراسر کشور دارد.</p>
+                
+                <h4>انواع خرما کرمان</h4>
+                <ul>
+                    <li><strong>خرمای مضافتی:</strong> این نوع خرما به دلیل لطافت، رطوبت مناسب و طعم شیرین و دلپذیرش، یکی از محبوب‌ترین انواع خرما در جهان شناخته می‌شود.</li>
+                    <li><strong>خرمای کلوته:</strong> خرمای کلوته یکی دیگر از ارقام پرمصرف و محبوب در منطقه است. این خرما شکلی بیضی و کشیده دارد و معمولاً کمی خشک‌تر از خرمای مضافتی است.</li>
+                    <li><strong>خرمای ربی:</strong> خرمای ربی معمولاً در دسته خرماهای خشک طبقه‌بندی می‌شود. این نوع خرما دارای پوست نازک و چسبیده به مغز است.</li>
+                </ul>
+                
+                <h4>خواص خرما</h4>
+                <ul>
+                    <li><strong>منبع انرژی فوری:</strong> خرما سرشار از قندهای طبیعی مانند فروکتوز، گلوکز و ساکارز است که بلافاصله پس از مصرف به بدن انرژی می‌بخشند.</li>
+                    <li><strong>فیبر غذایی:</strong> فیبر موجود در خرما به سلامت دستگاه گوارش کمک کرده، از یبوست جلوگیری می‌کند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> خرما حاوی ویتامین‌های گروه B، ویتامین K، پتاسیم، منیزیم، آهن، مس و منگنز است.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> خرما حاوی آنتی‌اکسیدان‌های فلاونوئیدی، کاروتنوئیدی و فنولیک است.</li>
+                    <li><strong>تقویت استخوان‌ها:</strong> مواد معدنی مانند کلسیم، منیزیم و فسفر موجود در خرما به تقویت ساختار استخوان‌ها کمک می‌کنند.</li>
+                </ul>
+                
+                <h3>گردو: مغذی و پرخاصیت</h3>
+                <p>گردو، یکی دیگر از محصولات باغی مهم و ارزشمند استان کرمان است که به دلیل طعم لذیذ، بافت ترد و خواص فراوانش، مورد توجه بسیاری از باغداران و مصرف‌کنندگان قرار دارد.</p>
+                
+                <h4>انواع گردو کرمان</h4>
+                <ul>
+                    <li><strong>گردو پوست کاغذی:</strong> همانطور که از نامش پیداست، این رقم دارای پوست نازک و کاغذی است که به راحتی با دست شکسته می‌شود.</li>
+                    <li><strong>گردو سنگی:</strong> این رقم دارای پوستی ضخیم‌تر و سخت‌تر است که شکستن آن نیاز به ابزار دارد.</li>
+                    <li><strong>گردو محلی:</strong> علاوه بر ارقام اصلاح شده و شناخته شده، در مناطق مختلف کرمان باغ‌های قدیمی و بومی گردو وجود دارند.</li>
+                </ul>
+                
+                <h4>خواص گردو</h4>
+                <ul>
+                    <li><strong>چربی‌های سالم امگا-۳:</strong> گردو یکی از بهترین منابع گیاهی اسیدهای چرب امگا-۳ است.</li>
+                    <li><strong>پروتئین گیاهی:</strong> گردو حاوی مقدار قابل توجهی پروتئین است که آن را به یک میان‌وعده رضایت‌بخش تبدیل می‌کند.</li>
+                    <li><strong>فیبر غذایی:</strong> فیبر موجود در گردو به سلامت دستگاه گوارش کمک کرده و در تنظیم سطح قند خون نقش دارد.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> گردو سرشار از آنتی‌اکسیدان‌هایی مانند ویتامین E، ملاتونین و پلی‌فنول‌ها است.</li>
+                    <li><strong>سلامت مغز:</strong> به دلیل ساختار شباهت به مغز و همچنین وجود اسیدهای چرب امگا-۳، مصرف گردو با بهبود عملکرد مغز مرتبط است.</li>
+                </ul>
+                
+                <h3>انار: یاقوت سرخ کرمان</h3>
+                <p>انار، یکی از میوه‌های پاییزی محبوب و استراتژیک استان کرمان است که به دلیل طعم ترش و شیرین دلپذیر، رنگ سرخ جذاب و خواص بی‌نظیرش، جایگاه ویژه‌ای در بین مردم منطقه و سراسر کشور دارد.</p>
+                
+                <h4>انواع انار کرمان</h4>
+                <ul>
+                    <li><strong>انار ملس:</strong> این نوع انار ترکیبی از طعم شیرین و ترش را دارد و به همین دلیل طرفداران زیادی پیدا کرده است.</li>
+                    <li><strong>انار ترش:</strong> همانطور که از نامش پیداست، این انار طعمی غالب ترش دارد و معمولاً برای تهیه رب انار مناسب است.</li>
+                    <li><strong>انار شیرین:</strong> این انارها طعمی شیرین و ملایم دارند و برای مصرف تازه خوری بسیار ایده‌آل هستند.</li>
+                </ul>
+                
+                <h4>خواص انار</h4>
+                <ul>
+                    <li><strong>آنتی‌اکسیدان‌های قوی:</strong> انار حاوی مقادیر بسیار زیادی آنتی‌اکسیدان به نام "پونیکالاژین‌ها" است.</li>
+                    <li><strong>سلامت قلب و عروق:</strong> مصرف منظم آب انار می‌تواند به کاهش فشار خون سیستولیک و بهبود جریان خون کمک کند.</li>
+                    <li><strong>خواص ضد التهابی:</strong> ترکیبات موجود در انار دارای خواص ضد التهابی قوی هستند.</li>
+                    <li><strong>پیشگیری از سرطان:</strong> تحقیقات نشان داده‌اند که آنتی‌اکسیدان‌های انار ممکن است در جلوگیری از رشد سلول‌های سرطانی مؤثر باشند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> انار منبع خوبی از ویتامین C، ویتامین K و پتاسیم است.</li>
+                </ul>
+                
+                <h3>سایر میوه‌های کرمان</h3>
+                <p>علاوه بر میوه‌های مشهور و شاخصی که به تفصیل به آن‌ها پرداخته شد، استان کرمان دارای تنوع بسیار بالایی از میوه‌های دیگر نیز می‌باشد:</p>
+                
+                <ul>
+                    <li><strong>زردآلو:</strong> در مناطق کوهستانی و معتدل‌تر کرمان، زردآلو با طعمی شیرین و کمی ترش و رنگ زیبای نارنجی‌اش کشت می‌شود.</li>
+                    <li><strong>هلو و شلیل:</strong> این میوه‌های گوشتی و آبدار با طعم شیرین و عطر دلنشینشان، در فصول گرم سال در مناطقی از کرمان یافت می‌شوند.</li>
+                    <li><strong>انگور:</strong> استان کرمان از تولیدکنندگان مهم انگور در ایران است و انواع مختلفی از انگورهای بی‌دانه و دانه‌دار تولید می‌کند.</li>
+                    <li><strong>سیب و گلابی:</strong> در مناطق کوهستانی‌تر و سردسیرتر استان کرمان، کشت سیب و گلابی نیز رایج است.</li>
+                    <li><strong>انجیر:</strong> در برخی مناطق گرمسیری و نیمه کوهستانی کرمان، درختان انجیر نیز به ثمر می‌نشینند.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>کرمان، با داشتن آب و هوای مناسب برای پرورش محصولات متنوع کشاورزی، خاک حاصلخیز و سابقه طولانی در امر باغداری و کشاورزی، یکی از مهم‌ترین مراکز تولید میوه در ایران به شمار می‌رود. میوه‌های این استان، از پسته طلایی‌رنگش گرفته تا انار یاقوتی و خرمای شیرین کویری، نه تنها به دلیل طعم لذیذ و بی‌نظیرشان، بلکه به دلیل خواص فراوان غذایی و درمانی، از اهمیت ویژه‌ای برخوردارند.</p>
+            </div>
+        </div>
+
+        <!-- Article 18: رازهای نگهداری میوه -->
+        <div class="article-content" id="article-18">
+            <div class="article-header">
+                <img src="fruit.png" alt="رازهای نگهداری میوه">
+                <h2>رازهای نگهداری میوه: چطور میوه‌ها رو تازه نگه داریم تا بیشتر لذت ببریم؟</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>میوه‌ها، هدایای پرخاصیت و خوش‌طعم طبیعت هستند که سرشار از ویتامین‌ها، مواد معدنی، آنتی‌اکسیدان‌ها و فیبر می‌باشند. مصرف منظم میوه‌ها نقش بسزایی در حفظ سلامتی، تقویت سیستم ایمنی بدن و پیشگیری از بیماری‌های مزمن دارد. اما گاهی اوقات، خرید میوه‌های فراوان و عدم آگاهی از روش‌های صحیح نگهداری آن‌ها، منجر به فساد زودرس، از دست رفتن تازگی و طعم دلپذیرشان می‌شود.</p>
+                
+                <h3>بخش اول: دما و رطوبت، کلید طلایی تازگی میوه</h3>
+                <p>تنظیم دما و رطوبت مناسب، مهم‌ترین عامل در حفظ تازگی و کیفیت میوه‌ها است. هر میوه، نیازهای منحصر به فرد خود را دارد و نادیده گرفتن این نیازها، می‌تواند عمر مفید آن‌ها را به شدت کاهش دهد.</p>
+                
+                <h4>۱. دمای ایده‌آل برای نگهداری میوه‌ها</h4>
+                <h5>میوه‌هایی که به سرما حساس هستند (دمای اتاق بهترین گزینه):</h5>
+                <ul>
+                    <li><strong>موز:</strong> موزها در دمای پایین‌تر از ۱۲ درجه سانتی‌گراد شروع به سیاه شدن پوست می‌کنند. بهتر است آن‌ها را در دمای اتاق و دور از نور مستقیم خورشید نگهداری کنید.</li>
+                    <li><strong>گوجه‌فرنگی:</strong> گوجه‌فرنگی در یخچال طعم و بافت خود را از دست می‌دهد. بهترین دما برای نگهداری آن، دمای اتاق است.</li>
+                    <li><strong>آووکادو:</strong> آووکادوهای نارس را در دمای اتاق نگهداری کنید تا نرم شوند. پس از رسیدن، می‌توانید آن‌ها را برای چند روز در یخچال نگهداری کنید.</li>
+                    <li><strong>هلو، شلیل، زردآلو، آلو:</strong> این میوه‌های هسته‌دار اگر هنوز کاملاً نرسیده‌اند، بهتر است در دمای اتاق نگهداری شوند تا به نرمی مطلوب برسند.</li>
+                    <li><strong>انبه:</strong> انبه نیز مانند آووکادو، بهتر است در دمای اتاق نگهداری شود تا کاملاً رسیده و نرم شود.</li>
+                </ul>
+                
+                <h5>میوه‌هایی که در یخچال بهترین ماندگاری را دارند:</h5>
+                <ul>
+                    <li><strong>سیب:</strong> سیب‌ها در یخچال ماندگاری بسیار خوبی دارند. دما بین ۰ تا ۴ درجه سانتی‌گراد برای آن‌ها ایده‌آل است.</li>
+                    <li><strong>انگور:</strong> انگورها به سرما حساس نیستند و در یخچال تا چند هفته تازگی خود را حفظ می‌کنند.</li>
+                    <li><strong>توت‌فرنگی، تمشک، بلوبری:</strong> این میوه‌های لطیف به رطوبت و دما حساس هستند. بهترین حالت نگهداری آن‌ها در یخچال و در ظروف مخصوص است.</li>
+                    <li><strong>گلابی:</strong> گلابی‌ها نیز مانند سیب‌ها از دمای خنک بهره می‌برند.</li>
+                    <li><strong>گیلاس و آلبالو:</strong> این میوه‌ها را نیز در یخچال و در ظروف دربسته نگهداری کنید.</li>
+                </ul>
+                
+                <h4>۲. رطوبت مناسب</h4>
+                <ul>
+                    <li><strong>رطوبت بالا برای میوه‌های برگ‌دار و ریشه‌دار:</strong> سبزیجاتی مانند کاهو و اسفناج که نیاز به رطوبت بالا دارند، در بخش مخصوص سبزیجات یخچال نگهداری می‌شوند.</li>
+                    <li><strong>رطوبت پایین برای میوه‌هایی که مستعد کپک زدن هستند:</strong> توت‌ها و میوه‌هایی که پوستی نازک دارند، با رطوبت زیاد زودتر خراب می‌شوند.</li>
+                </ul>
+                
+                <h3>بخش دوم: ظروف و کیسه‌های نگهداری – خانه دوم میوه‌های شما</h3>
+                <p>انتخاب ظرف یا کیسه نگهداری مناسب، تاثیر قابل توجهی بر حفظ تازگی میوه‌ها دارد.</p>
+                
+                <h4>انواع ظروف مناسب:</h4>
+                <ul>
+                    <li><strong>کیسه‌های پلاستیکی مخصوص میوه و سبزیجات:</strong> این کیسه‌ها معمولاً دارای سوراخ‌های ریزی هستند که تهویه مناسب را فراهم می‌کنند.</li>
+                    <li><strong>ظروف دربسته شفاف و قابل تهویه:</strong> ظروف پلاستیکی یا شیشه‌ای که درب آن‌ها کاملاً بسته می‌شود، می‌توانند از تماس میوه‌ها با هوای خشک یخچال جلوگیری کنند.</li>
+                    <li><strong>دستمال کاغذی یا پارچه‌ای:</strong> برای نگهداری میوه‌هایی مانند سیب یا گلابی در یخچال، می‌توانید آن‌ها را در دستمال کاغذی بپیچید.</li>
+                    <li><strong>سبد یا ظروف بدون درپوش:</strong> برای میوه‌هایی که در دمای اتاق نگهداری می‌شوند و نیاز به جریان هوا دارند، مناسب است.</li>
+                </ul>
+                
+                <h3>بخش سوم: ترفندهای خلاقانه برای جلوگیری از قهوه‌ای شدن و خراب شدن زودهنگام</h3>
+                
+                <h4>جلوگیری از قهوه‌ای شدن میوه‌های برش خورده:</h4>
+                <ul>
+                    <li><strong>آب لیمو یا سرکه:</strong> اسید موجود در آب لیمو یا سرکه، با جلوگیری از اکسیداسیون آنزیمی، مانع از قهوه‌ای شدن میوه‌هایی مانند سیب، گلابی و آووکادو می‌شود.</li>
+                    <li><strong>آب آناناس:</strong> آب آناناس نیز حاوی آنزیم‌هایی است که می‌تواند به کند کردن فرآیند قهوه‌ای شدن کمک کند.</li>
+                    <li><strong>کیسه وکیوم یا سلفون:</strong> پس از قرار دادن میوه برش خورده در ظرف، آن را با سلفون محکم بپوشانید تا تماس آن با هوا به حداقل برسد.</li>
+                </ul>
+                
+                <h4>جلوگیری از رسیدن سریع موز:</h4>
+                <ul>
+                    <li><strong>جدا کردن از خوشه:</strong> هر موز را از خوشه جدا کنید و قسمت اتصال آن را با سلفون بپوشانید.</li>
+                    <li><strong>آویزان کردن:</strong> موزها را آویزان کنید تا از له شدن و تماس آن‌ها با سطح جلوگیری شود.</li>
+                </ul>
+                
+                <h4>نگهداری سبزیجات برگ‌دار:</h4>
+                <ul>
+                    <li><strong>شستشوی صحیح:</strong> سبزیجات برگ‌دار را با دقت بشویید و کاملاً خشک کنید.</li>
+                    <li><strong>پوشاندن با دستمال:</strong> آن‌ها را در دستمال کاغذی یا پارچه‌ای پیچیده و در کیسه یا ظرف مخصوص سبزیجات در یخچال نگهداری کنید.</li>
+                </ul>
+                
+                <h4>حفظ تازگی سبزیجات ریشه‌ای:</h4>
+                <ul>
+                    <li><strong>پیاز و سیب‌زمینی:</strong> این دو را از هم جدا نگهداری کنید. پیاز گاز اتیلن تولید می‌کند که باعث جوانه‌زنی سیب‌زمینی می‌شود.</li>
+                    <li><strong>هویج و تربچه:</strong> برگ‌های آن‌ها را جدا کنید، زیرا رطوبت برگ‌ها باعث نرم شدن ریشه می‌شود.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>نگهداری صحیح میوه‌ها نه تنها به کاهش هزینه‌ها و جلوگیری از اسراف کمک می‌کند، بلکه تضمین می‌کند که همواره به طعم، عطر و فواید بی‌نظیر آن‌ها دسترسی داشته باشید. با به‌کارگیری نکات ساده‌ای که در این مقاله به آن‌ها اشاره شد، می‌توانید خانه‌ای پر از میوه‌های تازه و خوش‌عطر داشته باشید و از هر لقمه از این هدایای ارزشمند طبیعت نهایت لذت را ببرید.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="article-selection">
+        <div class="article-menu">
+            <div class="menu-item active" data-article="1">
+                <span class="menu-icon">🍎</span>
+                <span class="menu-title">خواص میوه‌های تازه</span>
+            </div>
+            <div class="menu-item" data-article="2">
+                <span class="menu-icon">🍇</span>
+                <span class="menu-title">میوه خشک</span>
+            </div>
+            <div class="menu-item" data-article="3">
+                <span class="menu-icon">🥤</span>
+                <span class="menu-title">اسموتی‌های سالم</span>
+            </div>
+            <div class="menu-item" data-article="4">
+                <span class="menu-icon">❄️</span>
+                <span class="menu-title">میوه‌های زمستان</span>
+            </div>
+            <div class="menu-item" data-article="5">
+                <span class="menu-icon">🔍</span>
+                <span class="menu-title">انتخاب میوه تازه</span>
+            </div>
+            <div class="menu-item" data-article="6">
+                <span class="menu-icon">🥤</span>
+                <span class="menu-title">آبمیوه‌های طبیعی</span>
+            </div>
+            <div class="menu-item" data-article="7">
+                <span class="menu-icon">🥗</span>
+                <span class="menu-title">رژیم غذایی سالم</span>
+            </div>
+            <div class="menu-item" data-article="8">
+                <span class="menu-icon">🌱</span>
+                <span class="menu-title">کشت میوه در خانه</span>
+            </div>
+            <div class="menu-item" data-article="9">
+                <span class="menu-icon">🍯</span>
+                <span class="menu-title">ترکیب میوه و عسل</span>
+            </div>
+            <div class="menu-item" data-article="10">
+                <span class="menu-icon">🧊</span>
+                <span class="menu-title">فریز کردن میوه</span>
+            </div>
+            <div class="menu-item" data-article="11">
+                <span class="menu-icon">🎂</span>
+                <span class="menu-title">دسرهای میوه‌ای</span>
+            </div>
+            <div class="menu-item" data-article="12">
+                <span class="menu-icon">🏺</span>
+                <span class="menu-title">نگهداری میوه‌ها در کرمان</span>
+            </div>
+            <div class="menu-item" data-article="13">
+                <span class="menu-icon">💎</span>
+                <span class="menu-title">گنجینه طعم و رنگ کرمان</span>
+            </div>
+            <div class="menu-item" data-article="14">
+                <span class="menu-icon">🎨</span>
+                <span class="menu-title">کرمان: تابلوی رنگارنگ فصول</span>
+            </div>
+            <div class="menu-item" data-article="15">
+                <span class="menu-icon">🌳</span>
+                <span class="menu-title">باغ‌های پنهان کرمان</span>
+            </div>
+            <div class="menu-item" data-article="16">
+                <span class="menu-icon">📋</span>
+                <span class="menu-title">راهنمای انتخاب میوه‌های مناسب کرمان</span>
+            </div>
+            <div class="menu-item" data-article="17">
+                <span class="menu-icon">🍇</span>
+                <span class="menu-title">میوه‌های خوشمزه کرمان</span>
+            </div>
+            <div class="menu-item" data-article="18">
+                <span class="menu-icon">🔐</span>
+                <span class="menu-title">رازهای نگهداری میوه</span>
+            </div>
+        </div>
+
+        <!-- Article 17: میوه‌های خوشمزه کرمان -->
+        <div class="article-content" id="article-17">
+            <div class="article-header">
+                <img src="fruit.png" alt="میوه‌های خوشمزه کرمان">
+                <h2>میوه‌های خوشمزه کرمان: سفری به دنیای طعم‌ها و خواص</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>کرمان، نگین کویر ایران، نه تنها به خاطر جاذبه‌های تاریخی و فرهنگی‌اش شناخته می‌شود، بلکه به دلیل تنوع و کیفیت میوه‌هایش نیز شهرت فراوانی دارد. آب و هوای گرم و خشک این منطقه، با روزهای آفتابی طولانی و شب‌های خنک، شرایط ایده‌آلی را برای رشد میوه‌هایی خاص و خوش‌طعم فراهم کرده است. این شرایط اقلیمی منحصربه‌فرد، در کنار خاک حاصلخیز و تکنیک‌های سنتی و مدرن کشاورزی، موجب شده تا کرمان به یکی از قطب‌های اصلی تولید میوه در ایران تبدیل شود.</p>
+                
+                <h3>پسته: طلای سبز کرمان</h3>
+                <p>پسته، بدون شک، معروف‌ترین و ارزشمندترین محصول کشاورزی کرمان است. این دانه روغنی خوشمزه، با طعم منحصربه‌فرد و عطر دل‌انگیز خود، نه تنها در ایران، بلکه در سراسر جهان طرفداران بی‌شماری دارد و به عنوان یکی از گران‌بهاترین خشکبار شناخته می‌شود.</p>
+                
+                <h4>انواع پسته کرمان</h4>
+                <ul>
+                    <li><strong>پسته کله قوچی:</strong> این رقم به دلیل شکل ظاهری کشیده و شبیه به سر قوچ، به این نام مشهور شده است. پسته کله قوچی دارای مغزی درشت و چربی بالا است و طعم شیرین و مطلوبی دارد.</li>
+                    <li><strong>پسته اکبری:</strong> پسته اکبری که به آن پسته بادامی کشیده نیز گفته می‌شود، بلندترین نوع پسته در بین ارقام ایرانی است. این پسته ظاهری کشیده و بادامی شکل دارد و مغز آن نیز کشیده‌تر و خوش‌طعم‌تر از سایر ارقام است.</li>
+                    <li><strong>پسته احمد آقایی:</strong> این رقم که به نام یکی از باغداران پیشکسوت این حوزه نامگذاری شده، یکی از ارقام پرطرفدار و اقتصادی پسته در کرمان است.</li>
+                    <li><strong>پسته فندقی:</strong> همانطور که از نامش پیداست، این رقم پسته شکلی گرد و شبیه به فندق دارد. پسته فندقی از نظر اندازه کوچکتر از ارقام دیگر است اما طعم بسیار خوبی دارد.</li>
+                </ul>
+                
+                <h4>خواص پسته</h4>
+                <ul>
+                    <li><strong>منبع غنی پروتئین:</strong> پسته حاوی پروتئین گیاهی با کیفیت بالا است که برای ساخت و ترمیم بافت‌های بدن ضروری است.</li>
+                    <li><strong>فیبر بالا:</strong> فیبر موجود در پسته به سلامت دستگاه گوارش کمک کرده، احساس سیری را طولانی‌تر می‌کند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> پسته سرشار از ویتامین‌های گروه B، ویتامین E، منیزیم، فسفر، پتاسیم، آهن و روی است.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> پسته حاوی آنتی‌اکسیدان‌هایی مانند لوتئین و زآگزانتین است که برای سلامت چشم‌ها مفید هستند.</li>
+                    <li><strong>چربی‌های سالم:</strong> بیشتر چربی‌های موجود در پسته از نوع چربی‌های غیراشباع هستند که برای سلامت قلب و عروق مفیدند.</li>
+                </ul>
+                
+                <h3>خرما: شیرینی کویر</h3>
+                <p>خرما، یکی دیگر از محصولات استراتژیک و بسیار محبوب استان کرمان است که به دلیل طعم فوق‌العاده شیرین، ارزش غذایی بالا و خواص بی‌شمارش، جایگاه ویژه‌ای در سبد غذایی مردم منطقه و همچنین مصرف‌کنندگان در سراسر کشور دارد.</p>
+                
+                <h4>انواع خرما کرمان</h4>
+                <ul>
+                    <li><strong>خرمای مضافتی:</strong> این نوع خرما به دلیل لطافت، رطوبت مناسب و طعم شیرین و دلپذیرش، یکی از محبوب‌ترین انواع خرما در جهان شناخته می‌شود.</li>
+                    <li><strong>خرمای کلوته:</strong> خرمای کلوته یکی دیگر از ارقام پرمصرف و محبوب در منطقه است. این خرما شکلی بیضی و کشیده دارد و معمولاً کمی خشک‌تر از خرمای مضافتی است.</li>
+                    <li><strong>خرمای ربی:</strong> خرمای ربی معمولاً در دسته خرماهای خشک طبقه‌بندی می‌شود. این نوع خرما دارای پوست نازک و چسبیده به مغز است.</li>
+                </ul>
+                
+                <h4>خواص خرما</h4>
+                <ul>
+                    <li><strong>منبع انرژی فوری:</strong> خرما سرشار از قندهای طبیعی مانند فروکتوز، گلوکز و ساکارز است که بلافاصله پس از مصرف به بدن انرژی می‌بخشند.</li>
+                    <li><strong>فیبر غذایی:</strong> فیبر موجود در خرما به سلامت دستگاه گوارش کمک کرده، از یبوست جلوگیری می‌کند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> خرما حاوی ویتامین‌های گروه B، ویتامین K، پتاسیم، منیزیم، آهن، مس و منگنز است.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> خرما حاوی آنتی‌اکسیدان‌های فلاونوئیدی، کاروتنوئیدی و فنولیک است.</li>
+                    <li><strong>تقویت استخوان‌ها:</strong> مواد معدنی مانند کلسیم، منیزیم و فسفر موجود در خرما به تقویت ساختار استخوان‌ها کمک می‌کنند.</li>
+                </ul>
+                
+                <h3>گردو: مغذی و پرخاصیت</h3>
+                <p>گردو، یکی دیگر از محصولات باغی مهم و ارزشمند استان کرمان است که به دلیل طعم لذیذ، بافت ترد و خواص فراوانش، مورد توجه بسیاری از باغداران و مصرف‌کنندگان قرار دارد.</p>
+                
+                <h4>انواع گردو کرمان</h4>
+                <ul>
+                    <li><strong>گردو پوست کاغذی:</strong> همانطور که از نامش پیداست، این رقم دارای پوست نازک و کاغذی است که به راحتی با دست شکسته می‌شود.</li>
+                    <li><strong>گردو سنگی:</strong> این رقم دارای پوستی ضخیم‌تر و سخت‌تر است که شکستن آن نیاز به ابزار دارد.</li>
+                    <li><strong>گردو محلی:</strong> علاوه بر ارقام اصلاح شده و شناخته شده، در مناطق مختلف کرمان باغ‌های قدیمی و بومی گردو وجود دارند.</li>
+                </ul>
+                
+                <h4>خواص گردو</h4>
+                <ul>
+                    <li><strong>چربی‌های سالم امگا-۳:</strong> گردو یکی از بهترین منابع گیاهی اسیدهای چرب امگا-۳ است.</li>
+                    <li><strong>پروتئین گیاهی:</strong> گردو حاوی مقدار قابل توجهی پروتئین است که آن را به یک میان‌وعده رضایت‌بخش تبدیل می‌کند.</li>
+                    <li><strong>فیبر غذایی:</strong> فیبر موجود در گردو به سلامت دستگاه گوارش کمک کرده و در تنظیم سطح قند خون نقش دارد.</li>
+                    <li><strong>آنتی‌اکسیدان‌ها:</strong> گردو سرشار از آنتی‌اکسیدان‌هایی مانند ویتامین E، ملاتونین و پلی‌فنول‌ها است.</li>
+                    <li><strong>سلامت مغز:</strong> به دلیل ساختار شباهت به مغز و همچنین وجود اسیدهای چرب امگا-۳، مصرف گردو با بهبود عملکرد مغز مرتبط است.</li>
+                </ul>
+                
+                <h3>انار: یاقوت سرخ کرمان</h3>
+                <p>انار، یکی از میوه‌های پاییزی محبوب و استراتژیک استان کرمان است که به دلیل طعم ترش و شیرین دلپذیر، رنگ سرخ جذاب و خواص بی‌نظیرش، جایگاه ویژه‌ای در بین مردم منطقه و سراسر کشور دارد.</p>
+                
+                <h4>انواع انار کرمان</h4>
+                <ul>
+                    <li><strong>انار ملس:</strong> این نوع انار ترکیبی از طعم شیرین و ترش را دارد و به همین دلیل طرفداران زیادی پیدا کرده است.</li>
+                    <li><strong>انار ترش:</strong> همانطور که از نامش پیداست، این انار طعمی غالب ترش دارد و معمولاً برای تهیه رب انار مناسب است.</li>
+                    <li><strong>انار شیرین:</strong> این انارها طعمی شیرین و ملایم دارند و برای مصرف تازه خوری بسیار ایده‌آل هستند.</li>
+                </ul>
+                
+                <h4>خواص انار</h4>
+                <ul>
+                    <li><strong>آنتی‌اکسیدان‌های قوی:</strong> انار حاوی مقادیر بسیار زیادی آنتی‌اکسیدان به نام "پونیکالاژین‌ها" است.</li>
+                    <li><strong>سلامت قلب و عروق:</strong> مصرف منظم آب انار می‌تواند به کاهش فشار خون سیستولیک و بهبود جریان خون کمک کند.</li>
+                    <li><strong>خواص ضد التهابی:</strong> ترکیبات موجود در انار دارای خواص ضد التهابی قوی هستند.</li>
+                    <li><strong>پیشگیری از سرطان:</strong> تحقیقات نشان داده‌اند که آنتی‌اکسیدان‌های انار ممکن است در جلوگیری از رشد سلول‌های سرطانی مؤثر باشند.</li>
+                    <li><strong>ویتامین‌ها و مواد معدنی:</strong> انار منبع خوبی از ویتامین C، ویتامین K و پتاسیم است.</li>
+                </ul>
+                
+                <h3>سایر میوه‌های کرمان</h3>
+                <p>علاوه بر میوه‌های مشهور و شاخصی که به تفصیل به آن‌ها پرداخته شد، استان کرمان دارای تنوع بسیار بالایی از میوه‌های دیگر نیز می‌باشد:</p>
+                
+                <ul>
+                    <li><strong>زردآلو:</strong> در مناطق کوهستانی و معتدل‌تر کرمان، زردآلو با طعمی شیرین و کمی ترش و رنگ زیبای نارنجی‌اش کشت می‌شود.</li>
+                    <li><strong>هلو و شلیل:</strong> این میوه‌های گوشتی و آبدار با طعم شیرین و عطر دلنشینشان، در فصول گرم سال در مناطقی از کرمان یافت می‌شوند.</li>
+                    <li><strong>انگور:</strong> استان کرمان از تولیدکنندگان مهم انگور در ایران است و انواع مختلفی از انگورهای بی‌دانه و دانه‌دار تولید می‌کند.</li>
+                    <li><strong>سیب و گلابی:</strong> در مناطق کوهستانی‌تر و سردسیرتر استان کرمان، کشت سیب و گلابی نیز رایج است.</li>
+                    <li><strong>انجیر:</strong> در برخی مناطق گرمسیری و نیمه کوهستانی کرمان، درختان انجیر نیز به ثمر می‌نشینند.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>کرمان، با داشتن آب و هوای مناسب برای پرورش محصولات متنوع کشاورزی، خاک حاصلخیز و سابقه طولانی در امر باغداری و کشاورزی، یکی از مهم‌ترین مراکز تولید میوه در ایران به شمار می‌رود. میوه‌های این استان، از پسته طلایی‌رنگش گرفته تا انار یاقوتی و خرمای شیرین کویری، نه تنها به دلیل طعم لذیذ و بی‌نظیرشان، بلکه به دلیل خواص فراوان غذایی و درمانی، از اهمیت ویژه‌ای برخوردارند.</p>
+            </div>
+        </div>
+
+        <!-- Article 18: رازهای نگهداری میوه -->
+        <div class="article-content" id="article-18">
+            <div class="article-header">
+                <img src="fruit.png" alt="رازهای نگهداری میوه">
+                <h2>رازهای نگهداری میوه: چطور میوه‌ها رو تازه نگه داریم تا بیشتر لذت ببریم؟</h2>
+            </div>
+            
+            <div class="article-body">
+                <p>میوه‌ها، هدایای پرخاصیت و خوش‌طعم طبیعت هستند که سرشار از ویتامین‌ها، مواد معدنی، آنتی‌اکسیدان‌ها و فیبر می‌باشند. مصرف منظم میوه‌ها نقش بسزایی در حفظ سلامتی، تقویت سیستم ایمنی بدن و پیشگیری از بیماری‌های مزمن دارد. اما گاهی اوقات، خرید میوه‌های فراوان و عدم آگاهی از روش‌های صحیح نگهداری آن‌ها، منجر به فساد زودرس، از دست رفتن تازگی و طعم دلپذیرشان می‌شود.</p>
+                
+                <h3>بخش اول: دما و رطوبت، کلید طلایی تازگی میوه</h3>
+                <p>تنظیم دما و رطوبت مناسب، مهم‌ترین عامل در حفظ تازگی و کیفیت میوه‌ها است. هر میوه، نیازهای منحصر به فرد خود را دارد و نادیده گرفتن این نیازها، می‌تواند عمر مفید آن‌ها را به شدت کاهش دهد.</p>
+                
+                <h4>۱. دمای ایده‌آل برای نگهداری میوه‌ها</h4>
+                <h5>میوه‌هایی که به سرما حساس هستند (دمای اتاق بهترین گزینه):</h5>
+                <ul>
+                    <li><strong>موز:</strong> موزها در دمای پایین‌تر از ۱۲ درجه سانتی‌گراد شروع به سیاه شدن پوست می‌کنند. بهتر است آن‌ها را در دمای اتاق و دور از نور مستقیم خورشید نگهداری کنید.</li>
+                    <li><strong>گوجه‌فرنگی:</strong> گوجه‌فرنگی در یخچال طعم و بافت خود را از دست می‌دهد. بهترین دما برای نگهداری آن، دمای اتاق است.</li>
+                    <li><strong>آووکادو:</strong> آووکادوهای نارس را در دمای اتاق نگهداری کنید تا نرم شوند. پس از رسیدن، می‌توانید آن‌ها را برای چند روز در یخچال نگهداری کنید.</li>
+                    <li><strong>هلو، شلیل، زردآلو، آلو:</strong> این میوه‌های هسته‌دار اگر هنوز کاملاً نرسیده‌اند، بهتر است در دمای اتاق نگهداری شوند تا به نرمی مطلوب برسند.</li>
+                    <li><strong>انبه:</strong> انبه نیز مانند آووکادو، بهتر است در دمای اتاق نگهداری شود تا کاملاً رسیده و نرم شود.</li>
+                </ul>
+                
+                <h5>میوه‌هایی که در یخچال بهترین ماندگاری را دارند:</h5>
+                <ul>
+                    <li><strong>سیب:</strong> سیب‌ها در یخچال ماندگاری بسیار خوبی دارند. دما بین ۰ تا ۴ درجه سانتی‌گراد برای آن‌ها ایده‌آل است.</li>
+                    <li><strong>انگور:</strong> انگورها به سرما حساس نیستند و در یخچال تا چند هفته تازگی خود را حفظ می‌کنند.</li>
+                    <li><strong>توت‌فرنگی، تمشک، بلوبری:</strong> این میوه‌های لطیف به رطوبت و دما حساس هستند. بهترین حالت نگهداری آن‌ها در یخچال و در ظروف مخصوص است.</li>
+                    <li><strong>گلابی:</strong> گلابی‌ها نیز مانند سیب‌ها از دمای خنک بهره می‌برند.</li>
+                    <li><strong>گیلاس و آلبالو:</strong> این میوه‌ها را نیز در یخچال و در ظروف دربسته نگهداری کنید.</li>
+                </ul>
+                
+                <h4>۲. رطوبت مناسب</h4>
+                <ul>
+                    <li><strong>رطوبت بالا برای میوه‌های برگ‌دار و ریشه‌دار:</strong> سبزیجاتی مانند کاهو و اسفناج که نیاز به رطوبت بالا دارند، در بخش مخصوص سبزیجات یخچال نگهداری می‌شوند.</li>
+                    <li><strong>رطوبت پایین برای میوه‌هایی که مستعد کپک زدن هستند:</strong> توت‌ها و میوه‌هایی که پوستی نازک دارند، با رطوبت زیاد زودتر خراب می‌شوند.</li>
+                </ul>
+                
+                <h3>بخش دوم: ظروف و کیسه‌های نگهداری – خانه دوم میوه‌های شما</h3>
+                <p>انتخاب ظرف یا کیسه نگهداری مناسب، تاثیر قابل توجهی بر حفظ تازگی میوه‌ها دارد.</p>
+                
+                <h4>انواع ظروف مناسب:</h4>
+                <ul>
+                    <li><strong>کیسه‌های پلاستیکی مخصوص میوه و سبزیجات:</strong> این کیسه‌ها معمولاً دارای سوراخ‌های ریزی هستند که تهویه مناسب را فراهم می‌کنند.</li>
+                    <li><strong>ظروف دربسته شفاف و قابل تهویه:</strong> ظروف پلاستیکی یا شیشه‌ای که درب آن‌ها کاملاً بسته می‌شود، می‌توانند از تماس میوه‌ها با هوای خشک یخچال جلوگیری کنند.</li>
+                    <li><strong>دستمال کاغذی یا پارچه‌ای:</strong> برای نگهداری میوه‌هایی مانند سیب یا گلابی در یخچال، می‌توانید آن‌ها را در دستمال کاغذی بپیچید.</li>
+                    <li><strong>سبد یا ظروف بدون درپوش:</strong> برای میوه‌هایی که در دمای اتاق نگهداری می‌شوند و نیاز به جریان هوا دارند، مناسب است.</li>
+                </ul>
+                
+                <h3>بخش سوم: ترفندهای خلاقانه برای جلوگیری از قهوه‌ای شدن و خراب شدن زودهنگام</h3>
+                
+                <h4>جلوگیری از قهوه‌ای شدن میوه‌های برش خورده:</h4>
+                <ul>
+                    <li><strong>آب لیمو یا سرکه:</strong> اسید موجود در آب لیمو یا سرکه، با جلوگیری از اکسیداسیون آنزیمی، مانع از قهوه‌ای شدن میوه‌هایی مانند سیب، گلابی و آووکادو می‌شود.</li>
+                    <li><strong>آب آناناس:</strong> آب آناناس نیز حاوی آنزیم‌هایی است که می‌تواند به کند کردن فرآیند قهوه‌ای شدن کمک کند.</li>
+                    <li><strong>کیسه وکیوم یا سلفون:</strong> پس از قرار دادن میوه برش خورده در ظرف، آن را با سلفون محکم بپوشانید تا تماس آن با هوا به حداقل برسد.</li>
+                </ul>
+                
+                <h4>جلوگیری از رسیدن سریع موز:</h4>
+                <ul>
+                    <li><strong>جدا کردن از خوشه:</strong> هر موز را از خوشه جدا کنید و قسمت اتصال آن را با سلفون بپوشانید.</li>
+                    <li><strong>آویزان کردن:</strong> موزها را آویزان کنید تا از له شدن و تماس آن‌ها با سطح جلوگیری شود.</li>
+                </ul>
+                
+                <h4>نگهداری سبزیجات برگ‌دار:</h4>
+                <ul>
+                    <li><strong>شستشوی صحیح:</strong> سبزیجات برگ‌دار را با دقت بشویید و کاملاً خشک کنید.</li>
+                    <li><strong>پوشاندن با دستمال:</strong> آن‌ها را در دستمال کاغذی یا پارچه‌ای پیچیده و در کیسه یا ظرف مخصوص سبزیجات در یخچال نگهداری کنید.</li>
+                </ul>
+                
+                <h4>حفظ تازگی سبزیجات ریشه‌ای:</h4>
+                <ul>
+                    <li><strong>پیاز و سیب‌زمینی:</strong> این دو را از هم جدا نگهداری کنید. پیاز گاز اتیلن تولید می‌کند که باعث جوانه‌زنی سیب‌زمینی می‌شود.</li>
+                    <li><strong>هویج و تربچه:</strong> برگ‌های آن‌ها را جدا کنید، زیرا رطوبت برگ‌ها باعث نرم شدن ریشه می‌شود.</li>
+                </ul>
+                
+                <h3>نتیجه‌گیری</h3>
+                <p>نگهداری صحیح میوه‌ها نه تنها به کاهش هزینه‌ها و جلوگیری از اسراف کمک می‌کند، بلکه تضمین می‌کند که همواره به طعم، عطر و فواید بی‌نظیر آن‌ها دسترسی داشته باشید. با به‌کارگیری نکات ساده‌ای که در این مقاله به آن‌ها اشاره شد، می‌توانید خانه‌ای پر از میوه‌های تازه و خوش‌عطر داشته باشید و از هر لقمه از این هدایای ارزشمند طبیعت نهایت لذت را ببرید.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="articles.js"></script>
+</body>
+</html> 

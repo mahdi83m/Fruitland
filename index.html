@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سرزمین میوه | Fruit Land</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+                    <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!-- Digital Menu Button -->
+        <div class="header-digital-menu">
+            <a href="#" class="digital-menu-btn">خرید آنلاین</a>
+        </div>
+        
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="لوگو" class="logo-img">
+            <span style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1;">
+              <span style="font-size: 1rem; font-weight: 500; color: #ec3825;">Fruit land</span>
+              <span style="font-size: 1.2rem; font-weight: 700;">سرزمین میوه</span>
+            </span>
+        </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav desktop-nav">
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#categories">محصولات</a></li>
+                    <li><a href="articles.html">مقالات</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Desktop Header Actions -->
+            <div class="header-actions desktop-actions">
+                <a href="#" class="digital-menu-btn">منوی دیجیتال</a>
+                <a href="#" class="virtual-tour-btn">بازدید مجازی</a>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay">
+            <div class="mobile-nav">
+                <div class="mobile-nav-header">
+                    <div class="mobile-logo">
+                        <img src="logo.png" alt="لوگو" class="logo-img">
+                        <span>سرزمین میوه</span>
+                    </div>
+                    <div class="mobile-menu-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                            <nav class="mobile-nav-menu">
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#categories">محصولات</a></li>
+                    <li><a href="articles.html">مقالات</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                    <li><a href="#" class="virtual-tour-btn">بازدید مجازی</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+        </div>
+        
+        <!-- Desktop Layout -->
+        <div class="hero-desktop">
+            <div class="container" style="margin-top: -80px;">
+                <div class="hero-content" >
+                    <h1 class="hero-title">به سرزمین میوه خوش آمدید</h1>
+                    <p class="hero-subtitle">تازه‌ترین و خوشمزه‌ترین میوه‌ها و آبمیوه‌ها را همین امروز سفارش دهید</p>
+                    <div class="hero-buttons">
+                        <a href="#categories" class="btn btn-primary"><span>همین الان خرید کن</span></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="fruit-pizza">
+                        <img src="Fruit_2.png" alt="میوه‌های تازه" class="hero-pulse-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Layout -->
+        <div class="hero-mobile">
+            <div class="mobile-hero-content-overlay">
+                <div class="mobile-hero-grid">
+                    <!-- Right Side: Title and Button -->
+                    <div class="mobile-hero-right">
+                        <h1 class="mobile-hero-title">به سرزمین میوه خوش آمدید</h1>
+                        <div class="mobile-hero-buttons">
+                            <a href="#categories" class="btn btn-primary"><span>همین الان خرید کن</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Left Side: Fruit Image -->
+                    <div class="mobile-hero-left">
+                        <div class="mobile-fruit-image">
+                            <img src="Fruit_2.png" alt="میوه‌های تازه" class="mobile-hero-fruit-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="wave-divider-svg">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div> 
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">دسته‌بندی محصولات</h2>
+            <div class="category-cards">
+                <div class="category-card card-1">
+                    <div class="card-icon"><img src="juice.png" alt="آبمیوه‌های طبیعی"></div>
+                    <h3>آبمیوه‌های طبیعی</h3>
+                    <p>طعم تازه و طبیعی میوه‌های فصلی</p>
+                    <button class="card-btn">خرید</button>
+                </div>
+                <div class="category-card card-2">
+                    <div class="card-icon"><img src="fruit t.png" alt="میوه‌های تازه"></div>
+                    <h3>میوه‌های تازه</h3>
+                    <p>انتخابی از بهترین و تازه‌ترین میوه‌ها</p>
+                    <button class="card-btn">خرید</button>
+                </div>
+                <div class="category-card card-3">
+                    <div class="card-icon"><img src="fruit kh.png" alt="آجیل و خشکبار"></div>
+                    <h3>آجیل و خشکبار</h3>
+                    <p>آجیل و خشکبار سالم و مغذی برای میان‌وعده و تنقلات</p>
+                    <button class="card-btn">خرید</button>
+                </div>
+                <div class="category-card card-4">
+                    <div class="card-icon"><img src="coca.png" alt="نوشیدنی‌های گازدار"></div>
+                    <h3>نوشیدنی‌های گازدار</h3>
+                    <p>نوشیدنی‌های خنک و گازدار با طعم میوه‌ای</p>
+                    <button class="card-btn">خرید</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <h2 class="section-title">مقالات</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image"><img src="1.png" alt="مقاله ۱"></div>
+                    <div class="article-content">
+                        <h3>خواص میوه‌های تازه برای سلامتی</h3>
+                        <p>با مصرف میوه‌های تازه، بدن خود را سرشار از ویتامین‌ها و آنتی‌اکسیدان‌ها کنید. در این مقاله با فواید میوه‌های مختلف آشنا شوید.</p>
+                        <a href="articles.html" class="article-btn">مطالعه مقاله</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image"><img src="2.png" alt="مقاله ۲"></div>
+                    <div class="article-content">
+                        <h3>همه چیز درباره میوه خشک: خواص، روش تهیه و مصرف</h3>
+                        <p>میوه خشک یک میان‌وعده سالم و سرشار از فیبر و ویتامین است. در این مقاله با فواید و روش تهیه آن آشنا شوید.</p>
+                        <a href="articles.html" class="article-btn">مطالعه مقاله</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image"><img src="3.png" alt="مقاله ۳"></div>
+                    <div class="article-content">
+                        <h3>طرز تهیه اسموتی‌های سالم و خوشمزه</h3>
+                        <p>با چند دستور ساده، اسموتی‌های مقوی و خوشمزه با میوه‌های فصل درست کنید و از طعم طبیعی لذت ببرید.</p>
+                        <a href="articles.html" class="article-btn">مطالعه مقاله</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="سرزمین میوه" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <h3>سرزمین میوه</h3>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        فروشگاه سرزمین میوه از سال ۱۳۹۵ با هدف عرضه میوه و تره‌بار با بالاترین کیفیت و قیمت منصفانه در استان کرمان آغاز به کار کرد.<br>
+                        این مجموعه به عنوان اولین هایپرمارکت تخصصی میوه و تره‌بار در کرمان، همواره تلاش کرده با تکیه بر اعتماد مشتریان و ارائه خدمات متمایز، در مسیر رشد و پیشرفت گام بردارد.<br>
+                        ما در سرزمین میوه با بهره‌گیری از تجهیزات پیشرفته و پرسنلی مجرب، در تلاشیم تا به‌روزترین و بهترین خدمات را به مشتریان عزیز ارائه کنیم.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>موقعیت ما</h4>
+                    <div class="location-info">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d609.1875739891007!2d56.989023097399816!3d30.26315022664649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1754322337450!5m2!1sen!2s"
+                                width="100%" 
+                                height="250" 
+                                style="border:0; border-radius: 8px;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://maps.app.goo.gl/eRXuoDRcnAZ6Fmkb9" 
+                           class="map-link" 
+                           target="_blank">
+                            <i class="fas fa-directions"></i>
+                            <span>مسیریابی در گوگل مپ</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>اطلاعات تماس</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>بلوار پزشک نبش کوچه۹</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>۰۹۱۳۶۰۱۲۲۰۰</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link instagram map-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>اینستاگرام</span>
+                        </a>
+                        <a href="#" class="social-link whatsapp map-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>واتساپ</span>
+                        </a>
+                    </div>
+                    <h4 class="quick-access-title">دسترسی سریع</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#categories">محصولات</a></li>
+                        <li><a href="articles.html">مقالات</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 1404 استودیو تبلیعاتی راش. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html> 

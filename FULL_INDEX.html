@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه میوه تازه | Fresh Fruit Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+/* styles.css inlined */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #4CAF50;
+    --accent-peach: #FF7043;
+    --secondary-blue: #2196F3;
+    --neutral-white: #FFFFFF;
+    --text-dark: #212121;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--neutral-white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.15);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media (max-width: 600px) {
+    .logo-img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav a:hover {
+    color: var(--secondary-blue);
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-peach);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-icon {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.user-icon:hover {
+    color: var(--secondary-blue);
+}
+
+.nav a:hover, .user-icon:hover {
+    color: #A36C30;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn, .btn-primary, .btn-secondary {
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    background: #ff704300;
+    color: #fff;
+    border: 1px solid #fff;
+    /* box-shadow: 0 4px 15px rgba(76, 175, 80, 0.15); */
+    transition: color 0.3s, border 0.3s, box-shadow 0.3s;
+    z-index: 1;
+}
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #fff;
+    width: 0%;
+    z-index: 0;
+    transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-primary:hover::before {
+    width: 100%;
+}
+.btn-primary span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+.btn-primary:hover span {
+    color: var(--accent-peach);
+}
+.btn-primary:hover {
+    border: 1px solid var(--accent-peach);
+    color: var(--accent-peach);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-green);
+    color: var(--neutral-white);
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    margin-right: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fruit-pizza {
+    width: 500px;
+    height: 500px;
+    margin-left: -120px;
+}
+@media (max-width: 900px) {
+    .fruit-pizza {
+        width: 350px;
+        height: 350px;
+        margin-left: 0;
+    }
+}
+
+.fruit-pizza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes fade-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-pulse-img {
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    animation: fade-in-top 1.2s cubic-bezier(0.4,0,0.2,1);
+    margin-left: -60px;
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.hero-pulse-img.hero-img-small {
+    width: 260px;
+    height: 260px;
+}
+@media (max-width: 900px) {
+    .hero-pulse-img {
+        width: 320px;
+        height: 320px;
+        margin-left: 0;
+        transition: none;
+    }
+    .hero-pulse-img.hero-img-small {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.hero-title, .hero-subtitle, .hero-buttons {
+    animation: fade-in-top 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hero-buttons {
+    animation: fade-in-right 1.2s cubic-bezier(0.4,0,0.2,1);
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+}
+
+/* Wave Divider */
+.wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.wave-divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Categories Section */
+.categories {
+    background: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: var(--text-dark);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--accent-peach);
+    border-radius: 2px;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.category-card {
+    background: var(--neutral-white);
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+}
+
+.card-1 { --gradient-start: #ff6b9d; --gradient-end: #c44569; }
+.card-2 { --gradient-start: #26de81; --gradient-end: #20bf6b; }
+.card-3 { --gradient-start: #a55eea; --gradient-end: #8854d0; }
+.card-4 { --gradient-start: #fdcb6e; --gradient-end: #e17055; }
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-card .card-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.category-card .card-icon img {
+    width: 5vw;
+    height: 8vh;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.category-card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.card-btn {
+    background: var(--accent-peach);
+    color: var(--neutral-white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: var(--secondary-blue);
+    color: var(--neutral-white);
+}
+
+/* Deals Section */
+.deals {
+    background: #f8f9fa;
+    padding: 100px 0;
+    position: relative;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.deal-card {
+    background: var(--neutral-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.deal-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.deal-card:hover .deal-image img {
+    transform: scale(1.1);
+}
+
+.deal-content {
+    padding: 30px;
+}
+
+.deal-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.new-price {
+    color: #26de81;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.timer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.timer-item {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px 10px;
+    border-radius: 10px;
+    min-width: 60px;
+}
+
+.timer-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #26de81;
+}
+
+.timer-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.deal-btn {
+    width: 100%;
+    background: var(--accent-peach);
+    color: var(--neutral-white);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(38, 222, 129, 0.3);
+    background: var(--secondary-blue);
+    color: var(--neutral-white);
+}
+
+/* Wave Divider Bottom */
+.wave-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.wave-divider-bottom .shape-fill {
+    fill: #26de81;
+}
+
+/* Gallery Section */
+.gallery {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Special Product Section */
+.special-product {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-blue) 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.special-product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.special-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.special-text {
+    color: var(--text-dark);
+}
+
+.special-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.product-specs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.spec-item {
+    text-align: center;
+}
+
+.spec-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffd93d;
+}
+
+.spec-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.special-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.special-btn {
+    background: var(--primary-green);
+    color: var(--neutral-white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.special-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: var(--secondary-blue);
+    color: var(--neutral-white);
+}
+
+.special-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fruit-drink {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.fruit-drink img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.droplets {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.droplet {
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50% 50% 50% 5px;
+    transform: rotate(-45deg);
+    animation: drop 2s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+.droplet:nth-child(2) { animation-delay: 0.5s; }
+.droplet:nth-child(3) { animation-delay: 1s; }
+
+@keyframes drop {
+    0%, 100% { transform: rotate(-45deg) translateY(0); opacity: 1; }
+    50% { transform: rotate(-45deg) translateY(20px); opacity: 0; }
+}
+
+/* Footer Section */
+.footer {
+    background: linear-gradient(to bottom, #E3F2FD 0%, #E3F2FD 10%, #f1f1f1 90%, #f1f1f1 100%);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-blue));
+    color: var(--neutral-white);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(38, 222, 129, 0.3);
+    background: var(--accent-peach);
+    color: var(--neutral-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav ul {
+        gap: 15px;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .fruit-pizza {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .category-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .deals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .special-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .product-specs {
+        justify-content: center;
+    }
+    
+    .fruit-drink {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+    }
+    
+    .product-specs {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .timer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+} 
+
+.about-us {
+    background: #E3F2FD;
+    padding: 100px 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text {
+    color: var(--text-dark);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+    text-shadow: 2px 2px 4px rgba(33,33,33,0.08);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--text-dark);
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(76,175,80,0.15);
+}
+
+.about-wave-top {
+    position: relative;
+    top: -1px;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: -1px;
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-image {
+        margin-top: 30px;
+    }
+} 
+
+.digital-menu-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #fff;
+    color: var(--accent-peach);
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid var(--accent-peach);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 112, 67, 0.10);
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+    margin-right: 0;
+    margin-left: 0;
+}
+.digital-menu-btn:hover {
+    background: var(--accent-peach);
+    color: #fff;
+    border: 1px solid var(--accent-peach);
+    box-shadow: 0 4px 16px rgba(255, 112, 67, 0.13);
+} 
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.fruit-pizza.fade-out {
+    animation: fade-out 1s cubic-bezier(0.4,0,0.2,1) forwards;
+} 
+/* Container */
+.slider-container {
+    position: relative;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Slider wrapper */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Slide */
+  .slide {
+    position: absolute;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 1.7s ease;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    filter: blur(5px);
+    z-index: 0;
+  }
+  
+  /* Image inside slide */
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Positions */
+  .slide.prev {
+    transform: translate(calc(-50% - 300px), -50%) scale(0.8);
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+  
+  .slide.center {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+    filter: blur(0);
+    z-index: 1;
+  }
+  
+  .slide.next {
+    transform: translate(calc(-50% + 300px), -50%) scale(0.8);
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+  
+/* --- styles.css content end --- */
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="لوگو" class="logo-img">
+                <span style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1;">
+                  <span style="font-size: 1rem; font-weight: 500; color: #ec3825;">Fruit land</span>
+                  <span style="font-size: 1.2rem; font-weight: 700;">سرزمین میوه</span>
+                </span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#categories">محصولات</a></li>
+                    <li><a href="#deals">گالری</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="digital-menu-btn">منوی دیجیتال</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">خوش‌آمدید به سرزمین میوه!</h1>
+                <p class="hero-subtitle">تازه‌ترین و خوشمزه‌ترین میوه‌ها و آبمیوه‌ها را همین امروز سفارش دهید</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn btn-primary"><span>اطلاعات بیشتر</span></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="fruit-pizza">
+                    <img src="fruit.png" alt="میوه‌های تازه" class="hero-pulse-img">
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">دسته‌بندی محصولات</h2>
+            <div class="category-cards">
+                <div class="category-card card-1">
+                    <div class="card-icon"><img src="juice.png" alt="آبمیوه‌های طبیعی"></div>
+                    <h3>آبمیوه‌های طبیعی</h3>
+                    <p>طعم تازه و طبیعی میوه‌های فصلی</p>
+                    <button class="card-btn">اطلاعات بیشتر</button>
+                </div>
+                <div class="category-card card-2">
+                    <div class="card-icon"><img src="fruit t.png" alt="میوه‌های تازه"></div>
+                    <h3>میوه‌های تازه</h3>
+                    <p>انتخابی از بهترین و تازه‌ترین میوه‌ها</p>
+                    <button class="card-btn">اطلاعات بیشتر</button>
+                </div>
+                <div class="category-card card-3">
+                    <div class="card-icon"><img src="fruit kh.png" alt="میوه خشک"></div>
+                    <h3>میوه خشک</h3>
+                    <p>میوه‌های خشک سالم و مغذی برای میان‌وعده</p>
+                    <button class="card-btn">اطلاعات بیشتر</button>
+                </div>
+                <div class="category-card card-4">
+                    <div class="card-icon"><img src="coca.png" alt="نوشیدنی‌های گازدار"></div>
+                    <h3>نوشیدنی‌های گازدار</h3>
+                    <p>نوشیدنی‌های خنک و گازدار با طعم میوه‌ای</p>
+                    <button class="card-btn">اطلاعات بیشتر</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <h2 class="section-title">گالری محصولات</h2>
+            <div class="slider-container">
+                <div class="slider"></div>
+            </div>                         
+        </div>
+    </section>
+
+    <!-- Special Product Section -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>درباره ما</h2>
+                    <p class="about-description">
+                        فروشگاه میوه تازه با هدف ارائه سالم‌ترین و خوشمزه‌ترین میوه‌ها و محصولات طبیعی، فعالیت خود را آغاز کرده است. ما باور داریم طعم واقعی زندگی در تازگی و سلامت است!<br>
+                        <br>
+                        تیم ما با عشق و دقت، بهترین میوه‌ها را از باغ‌های منتخب تهیه می‌کند تا شما تجربه‌ای متفاوت و لذت‌بخش از خرید میوه داشته باشید. کیفیت، صداقت و رضایت شما برای ما اولویت است.<br>
+                        <br>
+                        به دنیای رنگارنگ و سالم ما خوش آمدید!
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="about_us.png" alt="درباره فروشگاه میوه تازه" style="border-radius: 50%; box-shadow: 0 10px 30px rgba(76,175,80,0.15); width: 100%; max-width: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>به دنیای ارگانیک خوش آمدید</h3>
+                <p>ما متعهد به ارائه بهترین محصولات طبیعی و سالم برای شما هستیم</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+// script.js inlined
+// Smooth scrolling for navigation links
+// Add ripple effect to all buttons
+document.querySelectorAll('.btn, .card-btn, .deal-btn, .special-btn').forEach(button => {
+    button.style.position = 'relative';
+    button.style.overflow = 'hidden';
+    button.addEventListener('click', createRipple);
+});
+
+// Add CSS for ripple animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+
+
+const images = [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png"
+  ];
+  
+  const slider = document.querySelector(".slider");
+  let currentIndex = 0;
+  const slideElements = [];
+  
+  // یک‌بار همه اسلایدها رو می‌سازیم
+  images.forEach((src, index) => {
+    const slide = document.createElement("div");
+    slide.classList.add("slide");
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `Image ${index + 1}`;
+    slide.appendChild(img);
+    slider.appendChild(slide);
+    slideElements.push(slide);
+  });
+  
+  function updateSlides() {
+    slideElements.forEach((slide, index) => {
+      slide.classList.remove("prev", "center", "next");
+  
+      if (index === (currentIndex - 1 + images.length) % images.length) {
+        slide.classList.add("prev");
+      } else if (index === currentIndex) {
+        slide.classList.add("center");
+      } else if (index === (currentIndex + 1) % images.length) {
+        slide.classList.add("next");
+      }
+    });
+  }
+  
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlides();
+  }
+  
+  updateSlides();
+  setInterval(nextSlide, 3000);
+  
+// --- script.js content end ---
+    </script>
+</body>
+</html> 
